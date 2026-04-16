@@ -1,4 +1,5 @@
 import "./styles/index.scss";
+import "./styles/tailwind.css";
 import * as BiographySection from "./sections/Biography/Section";
 import * as FooterSection from "./sections/Footer/Section";
 import * as GallerySection from "./sections/Biography/Section";

@@ -1,3 +1,9 @@
+# CHIA TASK
+
+- ĐỌT: Biography, Gallery, Header, HistoryOfSite, Map, MemberList
+- PHÁT: FOOTER
+- KHANG: HEADER
+
 ## Hướng dẫn dùng git:
 
 Git là công cụ giúp quản lý code, lưu lại lịch sử thay đổi và làm việc nhóm hiệu quả. Repo (repository) là nơi lưu trữ code của project (nằm trên GitHub).

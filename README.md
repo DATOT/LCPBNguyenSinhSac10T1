@@ -1,16 +1,105 @@
-# React + Vite
+## Hướng dẫn dùng git:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Git là công cụ giúp quản lý code, lưu lại lịch sử thay đổi và làm việc nhóm hiệu quả. Repo (repository) là nơi lưu trữ code của project (nằm trên GitHub).
 
-Currently, two official plugins are available:
+1. Update code lên repo
+   Khi bạn đã chỉnh sửa code và muốn lưu lại + gửi lên GitHub:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+git add --all
+git commit -m "Mô tả thay đổi"
+git push origin main
+```
 
-## React Compiler
+Giải thích:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `git add --all` → chọn tất cả file đã thay đổi để chuẩn bị commit
+- `git commit` → lưu lại thay đổi vào lịch sử (local)
+- `git push` → đẩy code lên repo (GitHub)
 
-## Expanding the ESLint configuration
+**Nên commit từng phần nhỏ thay vì gom quá nhiều thay đổi vào 1 commit.**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Lấy dữ liệu mới từ repo
+   Trước khi bắt đầu code, luôn cập nhật code mới nhất:
+
+```bash
+git pull origin main
+```
+
+**Giải thích**:
+
+- Lấy code mới nhất từ branch main
+- Tránh bị conflict khi làm việc nhóm
+
+## Cài dependencies (chỉ cần làm 1 lần)
+
+```bash
+npm install
+```
+
+**Giải thích:**
+
+- Cài các thư viện cần thiết cho project
+- Sau khi clone repo về máy, bắt buộc phải chạy bước này
+
+## Chạy project
+
+Khởi chạy server local để test project
+
+```sh
+npm run dev
+```
+
+### Nếu lỗi, thử:
+
+```sh
+rmdir node_modules
+npm install
+```
+
+# QUY TẮC CHUNG
+
+- Luôn git pull trước khi bắt đầu code
+- Không push code bị lỗi
+- Viết commit message rõ ràng:
+  - "fix header bug" cái này ok
+  - "update" cái này không ok do không cụ thể
+
+- Format code trước khi commit
+- Không push file rác:
+  - node_modules/
+  - .env
+  - file build (`dist/`, `build/`)
+
+## Tránh conflict
+
+> _Conflict xảy ra khi nhiều người sửa cùng 1 chỗ trong file_
+
+**Cách hạn chế:**
+
+- Không sửa cùng 1 file cùng lúc
+- Pull code thường xuyên
+  **Nếu conflict:**
+
+```bash
+git pull
+# sửa conflict
+git add .
+git commit -m "resolve conflict"
+```
+
+## Tips:
+
+- Xem trạng thái:
+
+```bash
+git status
+```
+
+- Xem lịch sử commit:
+
+```bash
+git log
+```
+
+Ngoài ra trên vscode nên tải gitlens

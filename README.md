@@ -4,6 +4,28 @@
 - PHÁT: FOOTER
 - KHANG: HEADER
 
+# Cách setup project
+
+```bash
+# Clone project từ GitHub
+git clone https://github.com/DATOT/LCPBNguyenSinhSac10T1.git
+cd LCPBNguyenSinhSac10T1
+# Cài dependencies
+npm install
+# Chạy thử
+npm run dev
+```
+
+- Nếu thấy giao diện => OK
+- Nếu không:
+  - Kiểm tra đã npm install chưa1
+  - Thử:
+
+```bash
+rmdir node_modules
+npm install
+```
+
 ## Hướng dẫn dùng git:
 
 Git là công cụ giúp quản lý code, lưu lại lịch sử thay đổi và làm việc nhóm hiệu quả. Repo (repository) là nơi lưu trữ code của project (nằm trên GitHub).

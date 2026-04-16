@@ -116,6 +116,9 @@ git add .
 git commit -m "resolve conflict"
 ```
 
+- Vị trí phần mọi người làm sẽ ở trong src/sections
+- Những ảnh hay dữ liệu chung nên lưu ở public/assets
+
 ## Tips:
 
 - Xem trạng thái:

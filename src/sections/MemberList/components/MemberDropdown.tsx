@@ -19,16 +19,20 @@ export default function MemberDropdown({
       {/* Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="w-full px-4 py-2 bg-gray-300 text-gray-500 rounded-sm shadow hover:bg-gray-400 transition flex items-center justify-between"
+        className="w-full px-4 py-2 rounded-md transition flex items-center justify-between"
+        style={{
+          backgroundColor: "rgb(var(--color-surface))",
+          color: "rgb(var(--color-text))",
+          border: "1px solid rgba(0,0,0,0.05)",
+        }}
       >
-        <span>{title}</span>
+        <span className="font-medium">{title}</span>
 
-        {/* Animated icon */}
         <motion.span
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.2 }}
         >
-          <ChevronDown size={20} />
+          <ChevronDown size={18} />
         </motion.span>
       </button>
 
@@ -36,28 +40,31 @@ export default function MemberDropdown({
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, y: -10, height: 0 }}
+            initial={{ opacity: 0, y: -8, height: 0 }}
             animate={{ opacity: 1, y: 0, height: "auto" }}
-            exit={{ opacity: 0, y: -10, height: 0 }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-            className="overflow-hidden mt-2 bg-gray-100 rounded-2xl p-3 shadow-lg"
+            exit={{ opacity: 0, y: -8, height: 0 }}
+            transition={{ duration: 0.25 }}
+            className="overflow-hidden mt-2 rounded-xl p-3"
+            style={{
+              backgroundColor: "rgb(var(--color-surface) / 0.6)",
+              backdropFilter: "blur(8px)",
+              border: "1px solid rgba(0,0,0,0.05)",
+            }}
           >
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.05 }}
-              className="mb-3 text-lg font-semibold text-gray-700"
+            <div
+              className="mb-3 text-base font-medium"
+              style={{ color: "rgb(var(--color-text-muted))" }}
             >
               Meet {title}
-            </motion.div>
+            </div>
 
             <div className="grid grid-cols-2 gap-3">
               {members.map((member, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: -10 }}
+                  initial={{ opacity: 0, y: -6 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 + index * 0.05 }}
+                  transition={{ delay: index * 0.04 }}
                 >
                   <MemberCard {...member} />
                 </motion.div>

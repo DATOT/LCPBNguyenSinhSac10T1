@@ -6,21 +6,14 @@ type Info = {
   description: string;
 };
 
-const infoMap: Record<string, Info> = {
-  g1: {
-    title: "Group 1",
-    description: "This is the main historical zone.",
-  },
-  path14: {
-    title: "Region 14",
-    description: "Important structure here.",
-  },
-};
+interface SectionProps {
+  title: string;
+  mapInfo: Record<string, Info>;
+}
 
-// ✅ Groups that should NOT react on hover
-const NON_INTERACTIVE_GROUPS = new Set(["grass"]);
+const NON_INTERACTIVE_GROUPS = new Set(["grass", "street", "water", "road"]);
 
-export default function Section() {
+export default function Section({ mapInfo, title }: SectionProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -39,7 +32,7 @@ export default function Section() {
   useEffect(() => {
     let cleanups: (() => void)[] = [];
 
-    fetch("/assets/SoDoKhuDiTich.svg")
+    fetch("/assets/Map/SoDoKhuDiTich.svg")
       .then((res) => res.text())
       .then((svgText) => {
         if (!containerRef.current) return;
@@ -51,45 +44,42 @@ export default function Section() {
 
         svg.removeAttribute("width");
         svg.removeAttribute("height");
+        svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+
         svg.style.width = "100%";
-        svg.style.height = "auto";
+        svg.style.height = "100%";
         svg.style.display = "block";
+        svg.style.userSelect = "none";
 
-        const groups = containerRef.current.querySelectorAll("#layer1 > g");
+        const groups =
+          containerRef.current.querySelectorAll<SVGGElement>("#layer1 > g");
 
-        groups.forEach((g) => {
-          const group = g as SVGGElement;
+        groups.forEach((group) => {
           if (!group.id) return;
-
-          // ❌ Skip non-interactive groups
           if (NON_INTERACTIVE_GROUPS.has(group.id)) return;
 
-          // smoother base transition
           group.style.transition =
-            "transform 0.25s ease, opacity 0.25s ease, filter 0.25s ease";
-          group.style.transformOrigin = "center";
-          group.style.transformBox = "fill-box";
+            "opacity 0.25s ease, filter 0.25s ease";
+          group.style.cursor = "pointer";
 
-          const handleOver = (e: MouseEvent) => {
-            if (group.contains(e.relatedTarget as Node)) return;
-
+          const handleEnter = (e: PointerEvent) => {
             setActiveId(group.id);
 
-            // ✨ Emphasize hovered group
-            group.style.transform = "scale(1.05)";
-            group.style.filter = "opacity(2)";
+            // highlight hovered
+            group.style.filter =
+              "brightness(1.15) saturate(1.1) drop-shadow(0 4px 10px rgba(0,0,0,0.25))";
+            group.style.opacity = "1";
 
-            // ✨ De-emphasize others
+            // dim others
             groups.forEach((other) => {
               if (other === group) return;
-              const el = other as SVGGElement;
+              if (NON_INTERACTIVE_GROUPS.has(other.id)) return;
 
-              if (NON_INTERACTIVE_GROUPS.has(el.id)) return;
-
-              el.style.opacity = "0.4";
+              other.style.opacity = "0.25";
+              other.style.filter = "blur(1px)";
             });
 
-            const info = infoMap[group.id];
+            const info = mapInfo[group.id];
 
             setTooltip({
               x: e.clientX,
@@ -102,7 +92,7 @@ export default function Section() {
             });
           };
 
-          const handleMove = (e: MouseEvent) => {
+          const handleMove = (e: PointerEvent) => {
             setTooltip((prev) => ({
               ...prev,
               x: e.clientX,
@@ -110,14 +100,9 @@ export default function Section() {
             }));
           };
 
-          const handleOut = (e: MouseEvent) => {
-            if (group.contains(e.relatedTarget as Node)) return;
-
-            // reset all
-            groups.forEach((other) => {
-              const el = other as SVGGElement;
+          const handleLeave = () => {
+            groups.forEach((el) => {
               el.style.opacity = "1";
-              el.style.transform = "scale(1)";
               el.style.filter = "none";
             });
 
@@ -125,14 +110,14 @@ export default function Section() {
             setTooltip((prev) => ({ ...prev, visible: false }));
           };
 
-          group.addEventListener("mouseover", handleOver);
-          group.addEventListener("mousemove", handleMove);
-          group.addEventListener("mouseout", handleOut);
+          group.addEventListener("pointerenter", handleEnter);
+          group.addEventListener("pointermove", handleMove);
+          group.addEventListener("pointerleave", handleLeave);
 
           cleanups.push(() => {
-            group.removeEventListener("mouseover", handleOver);
-            group.removeEventListener("mousemove", handleMove);
-            group.removeEventListener("mouseout", handleOut);
+            group.removeEventListener("pointerenter", handleEnter);
+            group.removeEventListener("pointermove", handleMove);
+            group.removeEventListener("pointerleave", handleLeave);
           });
         });
       });
@@ -140,39 +125,80 @@ export default function Section() {
     return () => {
       cleanups.forEach((fn) => fn());
     };
-  }, []);
+  }, [mapInfo]);
 
   return (
-    <div className="relative w-full">
-      {/* SVG */}
-      <div ref={containerRef} className="w-full overflow-hidden p-5 bg-white" />
+  <div
+    className="relative w-full h-screen overflow-hidden"
+    style={{
+      background: `rgb(var(--color-surface))`,
+      color: `rgb(var(--color-text))`,
+    }}
+  >
+    <div
+      className="absolute top-4 left-6 z-10 text-lg font-semibold"
+      style={{
+        position: "absolute", 
+        color: `rgb(var(--color-primary))`,
+      }}
+    >
+      {title}
+    </div>
 
-      {/* ✨ Tooltip */}
-      <AnimatePresence>
-        {tooltip.visible && tooltip.content && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 8 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 8 }}
-            transition={{ duration: 0.25 }}
-            className="fixed pointer-events-none z-50 bg-white/15 backdrop-blur-sm shadow-xl rounded-lg px-3 py-2 border"
+    {/* Map container */}
+    <div
+      ref={containerRef}
+      className="w-full h-full flex items-center justify-center p-6"
+    />
+
+    {/* Tooltip */}
+    <AnimatePresence>
+      {tooltip.visible && tooltip.content && (
+        <motion.div
+          initial={{ opacity: 0, y: 8, scale: 0.96 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 8, scale: 0.96 }}
+          transition={{ duration: 0.18 }}
+          className="fixed z-50 pointer-events-none max-w-xs"
+          style={{
+            left: tooltip.x + 14,
+            top: tooltip.y + 14,
+          }}
+        >
+          <div
             style={{
-              left: tooltip.x + 14,
-              top: tooltip.y + 14,
+              background: `rgb(var(--color-surface-elevated) / 0.75)`,
+              backdropFilter: "blur(14px)",
+              border: `1px solid rgb(var(--color-border))`,
+              borderRadius: "var(--radius-md)",
+              boxShadow:
+                "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.08)",
+              padding: "10px 14px",
             }}
           >
-            <h3 className="font-semibold text-sm">{tooltip.content.title}</h3>
-            <p className="text-xs text-gray-600">
+            <h3
+              style={{
+                fontSize: "0.85rem",
+                fontWeight: 600,
+                color: `rgb(var(--color-primary))`,
+              }}
+            >
+              {tooltip.content.title}
+            </h3>
+
+            <p
+              style={{
+                fontSize: "0.75rem",
+                marginTop: "4px",
+                color: `rgb(var(--color-text-muted))`,
+              }}
+            >
               {tooltip.content.description}
             </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Debug */}
-      <div className="p-3 text-sm">
-        <span className="font-medium">Active:</span> {activeId || "None"}
-      </div>
-    </div>
-  );
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </div>
+);
 }

@@ -1,59 +1,21 @@
 import React, { useRef, useLayoutEffect, useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import TimelineCard from "./components/TimelineCard";
 
-type TimelineItem = {
+export type TimelineItem = {
   time: string | number;
-  info: React.ReactNode;
+  title: string;
+  description: string;
 };
 
-const data: TimelineItem[] = [
-  {
-    time: 1800,
-    info: (
-      <>
-        <h3 className="text-xl font-bold">Foundation</h3>
-        <p className="text-gray-600">Something important happened here.</p>
-      </>
-    ),
-  },
-  {
-    time: 1850,
-    info: (
-      <>
-        <h3 className="text-xl font-bold">Expansion</h3>
-        <p className="text-gray-600">Major growth and development.</p>
-      </>
-    ),
-  },
-  {
-    time: 1900,
-    info: (
-      <>
-        <h3 className="text-xl font-bold">Innovation</h3>
-        <p className="text-gray-600">New ideas changed everything.</p>
-      </>
-    ),
-  },
-  {
-    time: 2000,
-    info: (
-      <>
-        <h3 className="text-xl font-bold">Modern Era</h3>
-        <p className="text-gray-600">Entering the digital world.</p>
-      </>
-    ),
-  },
-];
+export interface SectionProps {
+  title: string;
+  data: TimelineItem[];
+}
 
-const Card = ({ children }: { children: React.ReactNode }) => (
-  <div className="bg-white shadow-xl rounded-2xl p-6 border border-gray-100 w-64">
-    {children}
-  </div>
-);
-
-export default function Section() {
-  const containerRef = useRef(null);
-  const scrollRef = useRef<HTMLDivElement>(null);
+export default function Section({ data, title }: SectionProps) {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
 
   const [maxScroll, setMaxScroll] = useState(0);
 
@@ -61,57 +23,114 @@ export default function Section() {
     target: containerRef,
   });
 
-  // Measure actual width
   useLayoutEffect(() => {
-    if (scrollRef.current) {
+    const measure = () => {
+      if (!scrollRef.current) return;
       const totalWidth = scrollRef.current.scrollWidth;
-      const viewportWidth = window.innerWidth;
+      setMaxScroll(totalWidth - window.innerWidth + 100);
+    };
 
-      const extraOffset = 120; // 👈 small extra push at the end
-      setMaxScroll(totalWidth - viewportWidth + extraOffset);
-    }
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
   }, []);
 
-  const x = useTransform(scrollYProgress, [0, 1], [0, -maxScroll]);
+  const xRaw = useTransform(scrollYProgress, [0.05, 0.9], [0, -maxScroll]);
+  const x = useSpring(xRaw, { stiffness: 90, damping: 20 });
 
   return (
-    <div ref={containerRef} className="h-[300vh] bg-gray-50">
-      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
-        {/* PROGRESS LINE */}
-        <motion.div
-          className="absolute top-1/2 left-0 h-0.75 bg-blue-500 origin-left"
-          style={{ scaleX: scrollYProgress }}
-        />
+    <div
+      ref={containerRef}
+      className="h-[600vh]"
+      style={{
+        background: "rgb(var(--color-bg-yellow))",
+      }}
+    >
+      <div className="sticky top-0 h-screen overflow-hidden">
+        {/* HEADER */}
+        <div
+          className="flex items-center px-10 h-[10%] border-b"
+          style={{ borderColor: "rgb(var(--color-border))" }}
+        >
+          <h1
+            className="text-3xl font-bold"
+            style={{ color: "rgb(var(--color-text))" }}
+          >
+            {title}
+          </h1>
+        </div>
 
-        {/* BASE LINE */}
-        <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-300" />
+        {/* TIMELINE */}
+        <div className="relative flex items-center h-[90%]">
+          {/* LINE */}
+          <div
+            className="absolute top-1/2 left-0 h-[2px] w-full"
+            style={{ background: "rgb(var(--color-border))" }}
+          />
 
-        {/* HORIZONTAL CONTENT */}
-        <motion.div ref={scrollRef} style={{ x }} className="flex gap-40 px-20">
-          {data.map((item, index) => {
-            const isTop = index % 2 === 0;
-
-            return (
-              <div
+          {/* TRACK */}
+          <motion.div
+            ref={scrollRef}
+            style={{ x }}
+            className="flex gap-40 px-32"
+          >
+            {data.map((item, index) => (
+              <TimelineNode
                 key={index}
-                className="relative flex flex-col items-center min-w-75"
-              >
-                {/* CARD */}
-                <div className={`absolute ${isTop ? "bottom-16" : "top-16"}`}>
-                  <Card>{item.info}</Card>
-                </div>
+                item={item}
+                isTop={index % 2 === 0}
+              />
+            ))}
+          </motion.div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
-                {/* DOT */}
-                <div className="w-5 h-5 bg-blue-500 rounded-full z-10" />
+function TimelineNode({
+  item,
+  isTop,
+}: {
+  item: TimelineItem;
+  isTop: boolean;
+}) {
+  return (
+    <div className="relative min-w-[300px] flex flex-col items-center">
+      {/* CONNECTOR */}
+      <div
+        className={`absolute left-1/2 w-[2px] ${
+          isTop ? "bottom-1/2 h-24" : "top-1/2 h-24"
+        }`}
+        style={{ background: "rgb(var(--color-border))" }}
+      />
 
-                {/* TIME */}
-                <span className="mt-2 text-sm text-gray-500 font-medium">
-                  {item.time}
-                </span>
-              </div>
-            );
-          })}
-        </motion.div>
+      {/* TIME */}
+      <div
+        className={`absolute text-sm font-medium ${
+          isTop ? "top-4" : "bottom-4"
+        }`}
+        style={{ color: "rgb(var(--color-text-muted))" }}
+      >
+        {item.time}
+      </div>
+
+      {/* DOT */}
+      <div
+        className="absolute left-1/2 top-1/2 w-4 h-4 rounded-full -translate-x-1/2 -translate-y-1/2 z-20"
+        style={{
+          background: "rgb(var(--color-secondary))",
+          boxShadow: "0 0 12px rgba(var(--color-secondary), 0.5)",
+        }}
+      />
+
+      {/* CARD */}
+      <div className={`absolute ${isTop ? "bottom-24" : "top-24"}`}>
+        <TimelineCard
+          isTop={isTop}
+          title={item.title}
+          description={item.description}
+        />
       </div>
     </div>
   );

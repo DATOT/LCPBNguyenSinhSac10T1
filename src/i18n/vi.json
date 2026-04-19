@@ -1,0 +1,246 @@
+{
+  "biography": {
+    "title": "Cuộc đời và sự nghiệp cụ Nguyễn Sinh Sắc",
+    "data": [
+      {
+        "year": 1862,
+        "title": "Sinh ra tại làng Sen (Nghệ An)",
+        "description": "Cụ Nguyễn Sinh Sắc sinh năm 1862 tại làng Sen, xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An trong một gia đình nông dân."
+      },
+      {
+        "year": 1878,
+        "title": "Mồ côi và được nuôi dưỡng, bắt đầu con đường học vấn",
+        "description": "Sau khi mồ côi cha mẹ, lúc 16 tuổi cụ được nhà nho Hoàng Xuân Đường nhận nuôi, tạo điều kiện học hành. Cụ nổi tiếng thông minh, hiếu học và nằm trong nhóm 'Nam Đàn tứ hổ'."
+      },
+      {
+        "year": 1884,
+        "title": "Kết hôn với Hoàng Thị Loan",
+        "description": "Ở tuổi 22, cụ Nguyễn Sinh Sắc kết hôn với Hoàng Thị Loan, người bạn đời gắn bó trong giai đoạn đầu lập thân và học tập."
+      },
+      {
+        "year": 1894,
+        "title": "Đỗ Cử nhân trong khoa thi Hương",
+        "description": "Cụ đỗ Cử nhân, đánh dấu bước tiến quan trọng trong con đường khoa bảng và sự nghiệp học vấn Nho học."
+      },
+      {
+        "year": 1895,
+        "title": "Thi Hội không đỗ, tiếp tục học tập và nghiên cứu",
+        "description": "Cụ vào Huế thi Hội nhưng không đỗ. Sau đó cụ làm Hành tẩu bộ Hộ và theo học Quốc Tử Giám, tiếp tục nuôi chí học tập và rèn luyện."
+      },
+      {
+        "year": 1901,
+        "title": "Đỗ Phó bảng và chọn con đường dạy học",
+        "description": "Cụ đỗ Phó bảng. Ban đầu từ chối làm quan, sống giản dị bằng nghề dạy học, đọc sách tân thư và giao du với các sĩ phu yêu nước."
+      },
+      {
+        "year": 1906,
+        "title": "Nhậm chức Thừa biện bộ Lễ và tư tưởng tiến bộ",
+        "description": "Cụ tham gia triều đình với chức Thừa biện bộ Lễ. Cụ có tư tưởng tiến bộ, phê phán quan trường và đề cao tinh thần yêu nước, thương dân."
+      },
+      {
+        "year": 1909,
+        "title": "Làm Tri huyện Bình Khê, nổi tiếng thanh liêm",
+        "description": "Cụ được bổ nhiệm làm Tri huyện Bình Khê (Bình Định). Trong thời gian này, cụ bảo vệ dân nghèo, chống cường hào áp bức và có quan hệ với nhiều nhà nho yêu nước."
+      },
+      {
+        "year": 1910,
+        "title": "Bị giáng chức do vụ án cường hào",
+        "description": "Sau một vụ xử lý cường hào dẫn đến cái chết của người này, cụ bị triều đình xử phạt và giáng chức."
+      },
+      {
+        "year": 1917,
+        "title": "Về Cao Lãnh, dạy học và chữa bệnh cứu người",
+        "description": "Cụ về sống tại Cao Lãnh (Đồng Tháp). Tại đây cụ dạy học, bốc thuốc chữa bệnh và tiếp tục tham gia hoạt động cùng các sĩ phu yêu nước."
+      },
+      {
+        "year": 1929,
+        "title": "Qua đời tại Cao Lãnh",
+        "description": "Cuối tháng 11 năm 1929, cụ Nguyễn Sinh Sắc qua đời tại Cao Lãnh và được an táng gần chùa Hòa Long. Sự kiện được nhiều báo chí đương thời đưa tin, thể hiện sự kính trọng của xã hội."
+      }
+    ]
+  },
+
+  "historyOfSite": {
+    "title": "Sự hình thành và phát triển của khu di tích",
+    "data": [
+      {
+        "time": "Trước 1954",
+        "title": "Mộ ban đầu",
+        "description": "Mộ cụ Nguyễn Sinh Sắc lúc đầu được đắp bằng đất, về sau nhân dân trong vùng đã tôn lại bằng xi măng, gạch và ngói."
+      },
+      {
+        "time": "1954",
+        "title": "Xây dựng lại",
+        "description": "Các đơn vị bộ đội cùng nhân dân xây dựng lại ngôi mộ bằng xi măng, có lan can sắt bao bọc và bia mộ."
+      },
+      {
+        "time": "1968",
+        "title": "Bị hư hại",
+        "description": "Ngôi mộ bị hư hại xung quanh do bom giặc trong chiến tranh."
+      },
+      {
+        "time": "1975 - 1977",
+        "title": "Xây dựng khu di tích",
+        "description": "Sau khi đất nước thống nhất, Khu di tích Nguyễn Sinh Sắc được khởi công ngày 22/8/1975 và khánh thành ngày 13/2/1977."
+      },
+      {
+        "time": "1990",
+        "title": "Nhà sàn Bác Hồ & Ao Sen",
+        "description": "Xây dựng mô hình nhà sàn Bác Hồ (tỉ lệ 1:1) và Ao Sen Đồng Tháp nhân dịp kỷ niệm 100 năm ngày sinh của Bác."
+      },
+      {
+        "time": "1992",
+        "title": "Di tích quốc gia",
+        "description": "Khu di tích Nguyễn Sinh Sắc được công nhận là Di tích lịch sử văn hóa cấp Quốc gia (09/04/1992)."
+      },
+      {
+        "time": "2010",
+        "title": "Bảo tồn & phát huy",
+        "description": "Đưa vào sử dụng dự án bảo tồn, tôn tạo với nhiều hạng mục như nhà trưng bày, phục dựng Làng Hòa An xưa (22.000m²), tái hiện đời sống và nghề truyền thống Nam Bộ."
+      },
+      {
+        "time": "2012",
+        "title": "Đền thờ",
+        "description": "Khánh thành Đền thờ nhằm tỏ lòng tôn kính và tưởng nhớ công ơn cụ Phó bảng Nguyễn Sinh Sắc."
+      },
+      {
+        "time": "Hằng năm (27/10 ÂL)",
+        "title": "Lễ giỗ Cụ",
+        "description": "Nhân dân hội tụ tham dự lễ giỗ trong không khí trang nghiêm, thể hiện truyền thống “Uống nước nhớ nguồn”."
+      },
+      {
+        "time": "Lễ hội cấp tỉnh",
+        "title": "Nâng cấp lễ hội",
+        "description": "Tỉnh Đồng Tháp đã nâng ngày giỗ Cụ thành lễ hội cấp tỉnh hằng năm."
+      },
+      {
+        "time": "16/12/2025",
+        "title": "Di tích quốc gia đặc biệt",
+        "description": "Đón nhận bằng xếp hạng Di tích quốc gia đặc biệt Mộ cụ Phó bảng Nguyễn Sinh Sắc."
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "Bản đồ khu di tích",
+    "mapInfo": {
+      "NghiMon": {
+        "title": "Nghi môn",
+        "description": "Cổng chính dẫn vào khu di tích, mang ý nghĩa trang nghiêm, là nơi đánh dấu không gian tâm linh và lịch sử."
+      },
+      "Cong1": {
+        "title": "Cổng 1",
+        "description": ""
+      },
+      "Cong2": {
+        "title": "Cổng 2",
+        "description": ""
+      },
+      "Cong3": {
+        "title": "Cổng 3",
+        "description": ""
+      },
+      "Cong4": {
+        "title": "Cổng 4",
+        "description": ""
+      },
+      "Cong5": {
+        "title": "Cổng 5",
+        "description": ""
+      },
+      "BaiDoXe": {
+        "title": "Bãi đỗ xe",
+        "description": ""
+      },
+      "Nhakho": {
+        "title": "Nhà kho",
+        "description": "Nơi lưu trữ vật tư, thiết bị phục vụ công tác bảo tồn và vận hành khu di tích."
+      },
+      "NhaTrungBayDieuKhac": {
+        "title": "Nhà trưng bày điêu khắc",
+        "description": "Trưng bày các tác phẩm điêu khắc mang giá trị nghệ thuật và lịch sử liên quan đến khu di tích."
+      },
+      "NhaTrungBayHoChiMinh": {
+        "title": "Nhà trưng bày Hồ Chí Minh",
+        "description": "Trưng bày tư liệu, hình ảnh về Chủ tịch Hồ Chí Minh và mối liên hệ với thân sinh của Người."
+      },
+      "NhaSanBacHo": {
+        "title": "Nhà sàn Bác Hồ",
+        "description": "Mô hình phục dựng theo tỉ lệ 1:1, tái hiện không gian sống giản dị, gần gũi thiên nhiên của Bác Hồ."
+      },
+      "NhaBatDan": {
+        "title": "Nhà Bát Dần",
+        "description": "Kiểu nhà truyền thống Nam Bộ với kết cấu 8 cột, đảm bảo thông thoáng và thích nghi với khí hậu."
+      },
+      "NhaChuDinh": {
+        "title": "Nhà chữ Đinh",
+        "description": "Kiến trúc nhà truyền thống hình chữ Đinh, thể hiện nếp sống và văn hóa gia đình Nam Bộ."
+      },
+      "NhaNocNgua": {
+        "title": "Nhà Nọc Ngựa",
+        "description": "Ngôi nhà có kết cấu đặc biệt với hệ cột giữa chịu lực, tạo không gian rộng và thoáng."
+      },
+      "NhaMat": {
+        "title": "Nhà Mát",
+        "description": "Điểm dừng chân cho du khách."
+      },
+      "NhaTrenCoc": {
+        "title": "Nhà trên cọc",
+        "description": "Nhà sàn xây trên cọc, phù hợp điều kiện ngập nước, thể hiện sự thích nghi với thiên nhiên."
+      },
+      "WC": {
+        "title": "Nhà vệ sinh",
+        "description": ""
+      },
+      "QuanLyKhuDiTich": {
+        "title": "Nhà quản lý khu di tích",
+        "description": ""
+      },
+      "NhaTrungBayNguyenSinhSac": {
+        "title": "Nhà trưng bày Nguyễn Sinh Sắc",
+        "description": "Trưng bày tư liệu, hiện vật về cuộc đời và sự nghiệp của cụ Phó bảng Nguyễn Sinh Sắc."
+      },
+      "VomMoCuSac": {
+        "title": "Vòm mộ cụ Nguyễn Sinh Sắc",
+        "description": "Công trình hình cánh sen với 9 đầu rồng, tượng trưng cho sự che chở và tôn kính."
+      },
+      "NhaCuSac": {
+        "title": "Nhà cụ Nguyễn Sinh Sắc",
+        "description": "Không gian tái hiện nơi sinh hoạt, chữa bệnh và dạy học của cụ khi sống tại Cao Lãnh."
+      },
+      "DenThoCuSac": {
+        "title": "Đền thờ cụ Nguyễn Sinh Sắc",
+        "description": "Công trình thờ cúng trang nghiêm, mang kiến trúc truyền thống với nhiều chi tiết chạm khắc tinh xảo."
+      },
+      "TuongCuNguyenSinhSac": {
+        "title": "Tượng cụ Nguyễn Sinh Sắc",
+        "description": "Tượng tưởng niệm thể hiện sự tôn kính đối với cụ – một nhà nho yêu nước, thương dân."
+      },
+      "NhaOngCaNhiNguu": {
+        "title": "Nhà ông Cả Nhì Ngưu",
+        "description": "Ngôi nhà nơi cụ từng ở khi mới đến Cao Lãnh, thể hiện văn hóa sinh hoạt gia đình Nam Bộ."
+      },
+      "LoRen": {
+        "title": "Lò rèn",
+        "description": "Khu tái hiện nghề rèn truyền thống trong làng Hòa An xưa."
+      },
+      "NhaOngNamGiao": {
+        "title": "Nhà ông Năm Giáo",
+        "description": "Ngôi nhà đơn sơ nơi cụ từng sinh sống, chữa bệnh và qua đời."
+      },
+      "NhaKho": {
+        "title": "Nhà kho",
+        "description": ""
+      }
+    }
+  },
+  "aboutTheSite": {
+    "title": "Về khu di tích",
+    "description": "Khu di tích Nguyễn Sinh Sắc là một quần thể lịch sử – văn hóa tại Cao Lãnh, Đồng Tháp, nơi an nghỉ của Cụ Phó bảng Nguyễn Sinh Sắc – thân sinh Chủ tịch Hồ Chí Minh. Đây là “địa chỉ đỏ” mang ý nghĩa giáo dục truyền thống và lòng yêu nước.\n\nKhu di tích là sự kết hợp hài hòa giữa kiến trúc truyền thống và không gian sinh thái, với các hạng mục như khu mộ, đền thờ, hồ sen và làng Hòa An xưa. Nơi đây vừa lưu giữ giá trị lịch sử, vừa mang lại không gian yên bình cho du khách tham quan, trải nghiệm văn hóa Nam Bộ.\n\nKhông chỉ là nơi tưởng niệm, khu di tích còn góp phần nuôi dưỡng lòng tự hào dân tộc và ý thức gìn giữ giá trị văn hóa truyền thống.",
+    "image": "assets/AboutTheSite/khuditichnguyensinhsac.jpg"
+  },
+  "aboutNguyenSinhSac": {
+    "title": "Về cụ phó bảng Nguyễn Sinh Sắc",
+    "description": "Cụ Phó bảng Nguyễn Sinh Sắc (1862 – 1929) là một nhà nho yêu nước, vị quan thanh liêm và là thân sinh của Chủ tịch Hồ Chí Minh. Cuộc đời Cụ là tấm gương về đạo đức và tinh thần vì dân.\n\nDù đỗ đạt cao, Cụ sống giản dị, luôn bênh vực người nghèo và truyền bá tư tưởng yêu nước qua việc dạy học, chữa bệnh. Những năm cuối đời, Cụ gắn bó với Cao Lãnh và được nhân dân kính trọng.\n\nTư tưởng và nhân cách của Cụ đã ảnh hưởng sâu sắc đến Chủ tịch Hồ Chí Minh, trở thành nguồn cảm hứng cho nhiều thế hệ noi theo.",
+    "image": "public/assets/AboutNguyenSinhSac/nguyensinhsac.png"
+  }
+}

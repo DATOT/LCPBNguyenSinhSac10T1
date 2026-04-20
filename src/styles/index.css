@@ -113,3 +113,63 @@
     color: rgb(var(--color-muted));
   }
 }
+@layer utilities {
+  /* ===== Base scroll ===== */
+  html {
+    scroll-behavior: smooth;
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(120, 120, 120, 0.25) transparent;
+  }
+
+  /* ===== Chrome, Edge, Safari ===== */
+  html::-webkit-scrollbar {
+    width: 3px; /* ultra thin */
+    transition: width 0.25s ease;
+  }
+
+  html:hover::-webkit-scrollbar {
+    width: 7px; /* expand on hover */
+  }
+
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+
+    /* soft gradient */
+    background: linear-gradient(
+      180deg,
+      rgba(124, 58, 237, 0.25),
+      rgba(6, 182, 212, 0.25)
+    );
+
+    /* subtle glow */
+    box-shadow: 0 0 6px rgba(124, 58, 237, 0.25);
+
+    transition: all 0.25s ease;
+  }
+
+  html:hover::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      180deg,
+      rgba(124, 58, 237, 0.45),
+      rgba(6, 182, 212, 0.45)
+    );
+
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.4);
+  }
+
+  html::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      180deg,
+      rgba(124, 58, 237, 0.7),
+      rgba(6, 182, 212, 0.7)
+    );
+
+    box-shadow: 0 0 14px rgba(6, 182, 212, 0.6);
+  }
+}

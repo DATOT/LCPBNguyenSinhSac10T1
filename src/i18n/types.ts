@@ -12,7 +12,10 @@ export type MapInfo = Record<
   string,
   {
     title: string;
-    description: string;
+    shortDescription: string;
+    fullDescription: string;
+    image: string;
+    showFull?: boolean;
   }
 >;
 export type ContentSchema = {
@@ -26,6 +29,7 @@ export type ContentSchema = {
   };
   mapSection: {
     title: string;
+    hint: string;
     mapInfo: MapInfo;
   };
   aboutTheSite: {

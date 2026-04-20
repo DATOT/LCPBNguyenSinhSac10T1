@@ -53,7 +53,7 @@ export default function Section({ data, title }: SectionProps) {
           style={{ borderColor: "rgb(var(--color-border))" }}
         >
           <h1
-            className="text-3xl font-bold"
+            className="text-3xl font-semibold"
             style={{ color: "rgb(var(--color-text))" }}
           >
             {title}

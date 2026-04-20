@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { MemberCard, MemberCardProps } from "./MemberCard";
@@ -13,12 +13,13 @@ export default function MemberDropdown({
   members,
 }: MemberDropdownProps) {
   const [open, setOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="w-full">
+    <motion.div layout className="w-full">
       {/* Button */}
       <button
-        onClick={() => setOpen(!open)}
+        onClick={() => setOpen((v) => !v)}
         className="w-full px-4 py-2 rounded-md transition flex items-center justify-between"
         style={{
           backgroundColor: "rgb(var(--color-surface))",
@@ -37,13 +38,29 @@ export default function MemberDropdown({
       </button>
 
       {/* Dropdown */}
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         {open && (
           <motion.div
-            initial={{ opacity: 0, y: -8, height: 0 }}
-            animate={{ opacity: 1, y: 0, height: "auto" }}
-            exit={{ opacity: 0, y: -8, height: 0 }}
+            ref={dropdownRef}
+            layout
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25 }}
+            onUpdate={() => {
+              const el = dropdownRef.current;
+              if (!el) return;
+
+              const rect = el.getBoundingClientRect();
+
+              // If bottom is out of view → scroll just enough
+              if (rect.bottom > window.innerHeight) {
+                window.scrollBy({
+                  top: rect.bottom - window.innerHeight + 8,
+                  behavior: "auto",
+                });
+              }
+            }}
             className="overflow-hidden mt-2 rounded-xl p-3"
             style={{
               backgroundColor: "rgb(var(--color-surface) / 0.6)",
@@ -73,6 +90,6 @@ export default function MemberDropdown({
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 }

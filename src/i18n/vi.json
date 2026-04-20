@@ -122,114 +122,185 @@
   },
   "mapSection": {
     "title": "Bản đồ khu di tích",
+    "hint": "Thử ấn hoặc lia chuột lên các khu vực",
     "mapInfo": {
       "NghiMon": {
         "title": "Nghi môn",
-        "description": "Cổng chính dẫn vào khu di tích, mang ý nghĩa trang nghiêm, là nơi đánh dấu không gian tâm linh và lịch sử."
+        "shortDescription": "Cổng chính dẫn vào khu di tích.",
+        "fullDescription": "Cổng chính dẫn vào khu di tích, mang ý nghĩa trang nghiêm, là nơi đánh dấu không gian tâm linh và lịch sử.",
+        "image": "",
+        "showFull": true
       },
       "Cong1": {
         "title": "Cổng 1",
-        "description": ""
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       },
       "Cong2": {
         "title": "Cổng 2",
-        "description": ""
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       },
       "Cong3": {
         "title": "Cổng 3",
-        "description": ""
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       },
       "Cong4": {
         "title": "Cổng 4",
-        "description": ""
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       },
       "Cong5": {
         "title": "Cổng 5",
-        "description": ""
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       },
       "BaiDoXe": {
         "title": "Bãi đỗ xe",
-        "description": ""
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       },
       "Nhakho": {
         "title": "Nhà kho",
-        "description": "Nơi lưu trữ vật tư, thiết bị phục vụ công tác bảo tồn và vận hành khu di tích."
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       },
       "NhaTrungBayDieuKhac": {
         "title": "Nhà trưng bày điêu khắc",
-        "description": "Trưng bày các tác phẩm điêu khắc mang giá trị nghệ thuật và lịch sử liên quan đến khu di tích."
+        "shortDescription": "Trưng bày các tác phẩm điêu khắc.",
+        "fullDescription": "Trưng bày các tác phẩm điêu khắc mang giá trị nghệ thuật và lịch sử liên quan đến khu di tích.",
+        "image": "",
+        "showFull": true
       },
       "NhaTrungBayHoChiMinh": {
         "title": "Nhà trưng bày Hồ Chí Minh",
-        "description": "Trưng bày tư liệu, hình ảnh về Chủ tịch Hồ Chí Minh và mối liên hệ với thân sinh của Người."
+        "shortDescription": "Trưng bày tư liệu về Bác Hồ.",
+        "fullDescription": "Trưng bày tư liệu, hình ảnh về Chủ tịch Hồ Chí Minh và mối liên hệ với thân sinh của Người.",
+        "image": "",
+        "showFull": true
       },
       "NhaSanBacHo": {
         "title": "Nhà sàn Bác Hồ",
-        "description": "Mô hình phục dựng theo tỉ lệ 1:1, tái hiện không gian sống giản dị, gần gũi thiên nhiên của Bác Hồ."
+        "shortDescription": "Phục dựng không gian sống của Bác Hồ.",
+        "fullDescription": "Mô hình phục dựng theo tỉ lệ 1:1, tái hiện không gian sống giản dị, gần gũi thiên nhiên của Bác Hồ.",
+        "image": "",
+        "showFull": true
       },
       "NhaBatDan": {
         "title": "Nhà Bát Dần",
-        "description": "Kiểu nhà truyền thống Nam Bộ với kết cấu 8 cột, đảm bảo thông thoáng và thích nghi với khí hậu."
+        "shortDescription": "Nhà truyền thống Nam Bộ 8 cột.",
+        "fullDescription": "Kiểu nhà truyền thống Nam Bộ với kết cấu 8 cột, đảm bảo thông thoáng và thích nghi với khí hậu.",
+        "image": "",
+        "showFull": true
       },
       "NhaChuDinh": {
         "title": "Nhà chữ Đinh",
-        "description": "Kiến trúc nhà truyền thống hình chữ Đinh, thể hiện nếp sống và văn hóa gia đình Nam Bộ."
+        "shortDescription": "Nhà truyền thống hình chữ Đinh.",
+        "fullDescription": "Kiến trúc nhà truyền thống hình chữ Đinh, thể hiện nếp sống và văn hóa gia đình Nam Bộ.",
+        "image": "",
+        "showFull": true
       },
       "NhaNocNgua": {
         "title": "Nhà Nọc Ngựa",
-        "description": "Ngôi nhà có kết cấu đặc biệt với hệ cột giữa chịu lực, tạo không gian rộng và thoáng."
+        "shortDescription": "Nhà có kết cấu cột giữa chịu lực.",
+        "fullDescription": "Ngôi nhà có kết cấu đặc biệt với hệ cột giữa chịu lực, tạo không gian rộng và thoáng.",
+        "image": "",
+        "showFull": true
       },
       "NhaMat": {
         "title": "Nhà Mát",
-        "description": "Điểm dừng chân cho du khách."
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       },
       "NhaTrenCoc": {
         "title": "Nhà trên cọc",
-        "description": "Nhà sàn xây trên cọc, phù hợp điều kiện ngập nước, thể hiện sự thích nghi với thiên nhiên."
+        "shortDescription": "Nhà sàn chống ngập nước.",
+        "fullDescription": "Nhà sàn xây trên cọc, phù hợp điều kiện ngập nước, thể hiện sự thích nghi với thiên nhiên.",
+        "image": "",
+        "showFull": true
       },
       "WC": {
         "title": "Nhà vệ sinh",
-        "description": ""
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       },
       "QuanLyKhuDiTich": {
         "title": "Nhà quản lý khu di tích",
-        "description": ""
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       },
       "NhaTrungBayNguyenSinhSac": {
         "title": "Nhà trưng bày Nguyễn Sinh Sắc",
-        "description": "Trưng bày tư liệu, hiện vật về cuộc đời và sự nghiệp của cụ Phó bảng Nguyễn Sinh Sắc."
+        "shortDescription": "Tư liệu về cụ Nguyễn Sinh Sắc.",
+        "fullDescription": "Trưng bày tư liệu, hiện vật về cuộc đời và sự nghiệp của cụ Phó bảng Nguyễn Sinh Sắc.",
+        "image": "",
+        "showFull": true
       },
       "VomMoCuSac": {
         "title": "Vòm mộ cụ Nguyễn Sinh Sắc",
-        "description": "Công trình hình cánh sen với 9 đầu rồng, tượng trưng cho sự che chở và tôn kính."
+        "shortDescription": "Công trình hình cánh sen.",
+        "fullDescription": "Công trình hình cánh sen với 9 đầu rồng, tượng trưng cho sự che chở và tôn kính.",
+        "image": "",
+        "showFull": true
       },
       "NhaCuSac": {
         "title": "Nhà cụ Nguyễn Sinh Sắc",
-        "description": "Không gian tái hiện nơi sinh hoạt, chữa bệnh và dạy học của cụ khi sống tại Cao Lãnh."
+        "shortDescription": "Không gian sinh hoạt của cụ.",
+        "fullDescription": "Không gian tái hiện nơi sinh hoạt, chữa bệnh và dạy học của cụ khi sống tại Cao Lãnh.",
+        "image": "",
+        "showFull": true
       },
       "DenThoCuSac": {
         "title": "Đền thờ cụ Nguyễn Sinh Sắc",
-        "description": "Công trình thờ cúng trang nghiêm, mang kiến trúc truyền thống với nhiều chi tiết chạm khắc tinh xảo."
+        "shortDescription": "Công trình thờ cúng trang nghiêm.",
+        "fullDescription": "Công trình thờ cúng trang nghiêm, mang kiến trúc truyền thống với nhiều chi tiết chạm khắc tinh xảo.",
+        "image": "",
+        "showFull": true
       },
       "TuongCuNguyenSinhSac": {
         "title": "Tượng cụ Nguyễn Sinh Sắc",
-        "description": "Tượng tưởng niệm thể hiện sự tôn kính đối với cụ – một nhà nho yêu nước, thương dân."
+        "shortDescription": "Tượng tưởng niệm cụ Nguyễn Sinh Sắc.",
+        "fullDescription": "Tượng tưởng niệm thể hiện sự tôn kính đối với cụ – một nhà nho yêu nước, thương dân.",
+        "image": "",
+        "showFull": true
       },
       "NhaOngCaNhiNguu": {
         "title": "Nhà ông Cả Nhì Ngưu",
-        "description": "Ngôi nhà nơi cụ từng ở khi mới đến Cao Lãnh, thể hiện văn hóa sinh hoạt gia đình Nam Bộ."
+        "shortDescription": "Nhà nơi cụ từng ở tại Cao Lãnh.",
+        "fullDescription": "Ngôi nhà nơi cụ từng ở khi mới đến Cao Lãnh, thể hiện văn hóa sinh hoạt gia đình Nam Bộ.",
+        "image": "",
+        "showFull": true
       },
       "LoRen": {
         "title": "Lò rèn",
-        "description": "Khu tái hiện nghề rèn truyền thống trong làng Hòa An xưa."
+        "shortDescription": "Khu tái hiện nghề rèn truyền thống.",
+        "fullDescription": "Khu tái hiện nghề rèn truyền thống trong làng Hòa An xưa.",
+        "image": "",
+        "showFull": true
       },
       "NhaOngNamGiao": {
         "title": "Nhà ông Năm Giáo",
-        "description": "Ngôi nhà đơn sơ nơi cụ từng sinh sống, chữa bệnh và qua đời."
+        "shortDescription": "Nhà nơi cụ sinh sống và qua đời.",
+        "fullDescription": "Ngôi nhà đơn sơ nơi cụ từng sinh sống, chữa bệnh và qua đời.",
+        "image": "",
+        "showFull": true
       },
       "NhaKho": {
         "title": "Nhà kho",
-        "description": ""
+        "shortDescription": "",
+        "fullDescription": "",
+        "image": ""
       }
     }
   },

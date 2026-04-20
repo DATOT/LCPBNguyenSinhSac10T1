@@ -51,8 +51,10 @@ const members = [
 
 const Section = () => {
   return (
-    <div className="w-full bg-gray-100 p-2">
-      <MemberDropdown members={members} title="team coder" />
+    <div className="w-full p-2" style={{
+        backgroundColor: "rgb(var(--color-background))",
+      }}>
+      <MemberDropdown members={members} title="Team IT" />
     </div>
   );
 };

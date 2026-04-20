@@ -18,13 +18,13 @@ function App() {
   if (!content.historyOfSite) return null;
 
   return (
-    <div>
+    <div className="flex flex-col gap-1 " style={{backgroundColor: "rgb(var(--color-blue-dark))"}}>
       <HeaderSection.default />
       <AboutSection.default varient="place" title={content.aboutTheSite.title} description={content.aboutTheSite.description} image={content.aboutTheSite.image}/>
       <AboutSection.default varient="person" title={content.aboutNguyenSinhSac.title} description={content.aboutNguyenSinhSac.description} image={content.aboutNguyenSinhSac.image}/>
       <BiographySection.default data={content.biography.data} title={content.biography.title}/>
       <HistoryOfSiteSection.default data={content.historyOfSite.data} title={content.historyOfSite.title}/>
-      <MapSection.default mapInfo={content.mapSection.mapInfo} title={content.mapSection.title}/>
+      <MapSection.default mapInfo={content.mapSection.mapInfo} title={content.mapSection.title} hint={content.mapSection.hint}/>
       <GallerySection.default />
       <MemberListSection.default />
       <FooterSection.default />

@@ -1,3 +1,5 @@
+// Author: Habaokhangg
+// File: HeroMinimalParticles.tsx
 import React, { useState, useEffect } from 'react';
 
 // --- NATIVE ICONS ---
@@ -15,25 +17,22 @@ const HeroMinimalParticles: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Kích hoạt hiệu ứng fade-in khi trang vừa load xong
     setIsLoaded(true);
   }, []);
 
-  // Tạo ra 40 hạt tĩnh (Dùng công thức toán học thay vì Math.random để tránh lỗi Hydration của React)
   const particles = Array.from({ length: 40 }).map((_, i) => ({
     id: i,
     left: `${(i * 13) % 100}%`,
     top: `${(i * 27) % 100}%`,
     size: (i % 3) + 1.5,
-    duration: (i % 15) + 15, // Thời gian bay từ 15-30s
+    duration: (i % 15) + 15,
     delay: (i % 10) * 0.5,
-    maxOpacity: (i % 4) * 0.1 + 0.1 // Độ sáng từ 0.1 đến 0.4
+    maxOpacity: (i % 4) * 0.1 + 0.1
   }));
 
   return (
     <header className="relative w-full h-screen min-h-[750px] bg-zinc-950 text-zinc-50 overflow-hidden font-sans selection:bg-[#F5A623] selection:text-white">
 
-      {/* --- CSS NATIVE ANIMATIONS --- */}
       <style dangerouslySetInnerHTML={{
         __html: `
         @keyframes floatParticle {
@@ -54,17 +53,18 @@ const HeroMinimalParticles: React.FC = () => {
 
       {/* --- BACKGROUND & PARTICLES --- */}
       <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* Bạn có thể thay link ảnh này thành ảnh flycam thực tế của Lăng */}
         <img
-          src="https://images.pexels.com/photos/6735679/pexels-photo-6735679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/8/13/img2737-16919037726071551096263.jpg"
           alt="Khu di tích"
-          className={`h-full w-full object-cover transition-all duration-[3s] ${isLoaded ? 'opacity-80 scale-105 blur-0' : 'opacity-0 scale-110 blur-xl'}`}
+          className={`h-full w-full object-cover transition-all duration-[3s] ${isLoaded ? 'opacity-90 scale-105 blur-0' : 'opacity-0 scale-110 blur-xl'}`}
         />
 
-        {/* Lớp phủ tối mờ (Gradient) để làm nổi bật chữ */}
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/95 via-zinc-900/80 to-zinc-950/40"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-zinc-950/60"></div>
+        {/* ĐÃ CHỈNH SỬA: Lớp phủ Gradient sáng dần về bên phải (to-transparent) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent"></div>
+        {/* Giữ lại một chút gradient từ dưới lên để phần footer dễ đọc */}
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent"></div>
 
-        {/* Các hạt (Particles) bay lơ lửng */}
         {particles.map((p) => (
           <div
             key={p.id}
@@ -79,7 +79,7 @@ const HeroMinimalParticles: React.FC = () => {
         ))}
       </div>
 
-      {/* --- NAVIGATION TỐI GIẢN --- */}
+      {/* --- NAVIGATION --- */}
       <nav className={`relative z-20 w-full flex justify-between items-center px-6 lg:px-16 py-8 transition-all duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <div className="flex flex-col gap-1">
           <span className="text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase text-amber-500">
@@ -90,25 +90,22 @@ const HeroMinimalParticles: React.FC = () => {
           </span>
         </div>
 
-        {/* Nút Menu Hamburger - Chỉ giữ lại cho có cấu trúc Nav */}
         <button className="group flex flex-col items-end gap-2 p-4 -mr-4 hover:opacity-80 transition-opacity">
           <span className="h-[2px] w-8 bg-zinc-300 transition-all duration-500 group-hover:bg-[#F5A623]"></span>
           <span className="h-[2px] w-6 bg-zinc-300 transition-all duration-500 group-hover:bg-[#F5A623]"></span>
         </button>
       </nav>
 
-      {/* --- MAIN CONTENT (Thuần Typography) --- */}
+      {/* --- MAIN CONTENT --- */}
       <div className="relative z-10 w-full h-[calc(100%-120px)] flex flex-col justify-center px-6 lg:px-16 pb-12">
         <div className="w-full max-w-6xl">
           {isLoaded && (
             <>
-              {/* Cấp 1: Tiêu đề nhỏ */}
               <div className="animate-entrance flex items-center gap-3 text-[#F5A623] mb-6" style={{ animationDelay: '0.2s' }}>
                 <CompassIcon />
                 <p className="text-sm font-bold tracking-[0.2em] uppercase">Khu Di Tích Lịch Sử</p>
               </div>
 
-              {/* Cấp 2 + 3: TIÊU ĐỀ CHÍNH - Chữ bám sát thiết kế, tĩnh, uy nghi */}
               <h1 className="animate-entrance flex flex-col font-bold leading-[1.05] tracking-tight uppercase drop-shadow-2xl mb-8" style={{ fontFamily: '"Playfair Display", serif', animationDelay: '0.4s' }}>
                 <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[80px] text-zinc-100">
                   Di Tích Quốc Gia
@@ -118,7 +115,6 @@ const HeroMinimalParticles: React.FC = () => {
                 </span>
               </h1>
 
-              {/* Cấp 4: Câu trích dẫn */}
               <div className="animate-entrance flex items-center gap-4 pl-1" style={{ animationDelay: '0.6s' }}>
                 <div className="w-16 h-[1px] bg-zinc-500"></div>
                 <h2 className="text-2xl md:text-3xl font-light italic text-zinc-300 tracking-wide" style={{ fontFamily: '"Playfair Display", serif' }}>
@@ -146,7 +142,6 @@ const HeroMinimalParticles: React.FC = () => {
           </div>
         </div>
 
-        {/* Scroll indicator tối giản */}
         <div className="flex items-center gap-4 text-zinc-400">
           <span className="text-[10px] tracking-[0.2em] uppercase">Khám phá</span>
           <div className="w-[1px] h-8 bg-zinc-700 relative overflow-hidden">
@@ -159,4 +154,4 @@ const HeroMinimalParticles: React.FC = () => {
   );
 };
 
-export default HeroMinimalParticles; 
+export default HeroMinimalParticles;

@@ -35,13 +35,13 @@ export default function Section({ data, title }: SectionProps) {
     return () => window.removeEventListener("resize", measure);
   }, []);
 
-  const xRaw = useTransform(scrollYProgress, [0.05, 0.9], [0, -maxScroll]);
+  const xRaw = useTransform(scrollYProgress, [0.05, 0.85], [0, -maxScroll]);
   const x = useSpring(xRaw, { stiffness: 90, damping: 20 });
 
   return (
     <div
       ref={containerRef}
-      className="h-[600vh]"
+      className="h-[650vh]"
       style={{
         background: "rgb(var(--color-bg-yellow))",
       }}

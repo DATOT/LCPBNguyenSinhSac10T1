@@ -12,10 +12,11 @@ export type MapInfo = Record<
   string,
   {
     title: string;
-    shortDescription: string;
-    fullDescription: string;
-    image: string;
+    shortDescription?: string;
+    fullDescription?: string;
+    image?: string;
     showFull?: boolean;
+    color?: string;
   }
 >;
 export type ContentSchema = {

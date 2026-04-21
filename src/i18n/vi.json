@@ -128,179 +128,179 @@
         "title": "Nghi môn",
         "shortDescription": "Cổng chính dẫn vào khu di tích.",
         "fullDescription": "Cổng chính dẫn vào khu di tích, mang ý nghĩa trang nghiêm, là nơi đánh dấu không gian tâm linh và lịch sử.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/nghimon.jpg",
+        "showFull": true,
+        "color": "#ec1922"
       },
       "Cong1": {
         "title": "Cổng 1",
         "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "color": "#ec1922"
       },
       "Cong2": {
         "title": "Cổng 2",
         "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "color": "#ec1922"
       },
       "Cong3": {
         "title": "Cổng 3",
         "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "color": "#ec1922"
       },
       "Cong4": {
         "title": "Cổng 4",
         "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "color": "#ec1922"
       },
       "Cong5": {
         "title": "Cổng 5",
         "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "color": "#ec1922"
       },
       "BaiDoXe": {
         "title": "Bãi đỗ xe",
         "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "color": "#f78d54"
       },
       "Nhakho": {
         "title": "Nhà kho",
         "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "color": "#f78d54"
       },
       "NhaTrungBayDieuKhac": {
         "title": "Nhà trưng bày điêu khắc",
         "shortDescription": "Trưng bày các tác phẩm điêu khắc.",
         "fullDescription": "Trưng bày các tác phẩm điêu khắc mang giá trị nghệ thuật và lịch sử liên quan đến khu di tích.",
         "image": "",
-        "showFull": true
+        "showFull": true,
+        "color": "#f16521"
       },
       "NhaTrungBayHoChiMinh": {
         "title": "Nhà trưng bày Hồ Chí Minh",
         "shortDescription": "Trưng bày tư liệu về Bác Hồ.",
         "fullDescription": "Trưng bày tư liệu, hình ảnh về Chủ tịch Hồ Chí Minh và mối liên hệ với thân sinh của Người.",
         "image": "",
-        "showFull": true
+        "showFull": true,
+        "color": "#ec038b"
       },
       "NhaSanBacHo": {
         "title": "Nhà sàn Bác Hồ",
         "shortDescription": "Phục dựng không gian sống của Bác Hồ.",
         "fullDescription": "Mô hình phục dựng theo tỉ lệ 1:1, tái hiện không gian sống giản dị, gần gũi thiên nhiên của Bác Hồ.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/nhasanbacho.jpg",
+        "showFull": true,
+        "color": "#ec038b"
       },
       "NhaBatDan": {
         "title": "Nhà Bát Dần",
         "shortDescription": "Nhà truyền thống Nam Bộ 8 cột.",
         "fullDescription": "Kiểu nhà truyền thống Nam Bộ với kết cấu 8 cột, đảm bảo thông thoáng và thích nghi với khí hậu.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/nhabatdan.jpg",
+        "showFull": true,
+        "color": "#0200fc"
       },
       "NhaChuDinh": {
         "title": "Nhà chữ Đinh",
         "shortDescription": "Nhà truyền thống hình chữ Đinh.",
         "fullDescription": "Kiến trúc nhà truyền thống hình chữ Đinh, thể hiện nếp sống và văn hóa gia đình Nam Bộ.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/nhachudinh.jpg",
+        "showFull": true,
+        "color": "#642d8f"
       },
       "NhaNocNgua": {
         "title": "Nhà Nọc Ngựa",
         "shortDescription": "Nhà có kết cấu cột giữa chịu lực.",
         "fullDescription": "Ngôi nhà có kết cấu đặc biệt với hệ cột giữa chịu lực, tạo không gian rộng và thoáng.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/nhanocngua.jpg",
+        "showFull": true,
+        "color": "#91258d"
       },
       "NhaMat": {
         "title": "Nhà Mát",
         "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "color": "#fe00fc"
       },
       "NhaTrenCoc": {
         "title": "Nhà trên cọc",
         "shortDescription": "Nhà sàn chống ngập nước.",
         "fullDescription": "Nhà sàn xây trên cọc, phù hợp điều kiện ngập nước, thể hiện sự thích nghi với thiên nhiên.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/nhatrencoc.jfif",
+        "showFull": true,
+        "color": "#01fdfd"
       },
       "WC": {
         "title": "Nhà vệ sinh",
         "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "color": "#2e2f93"
       },
       "QuanLyKhuDiTich": {
         "title": "Nhà quản lý khu di tích",
         "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "color": "#fdf100"
       },
       "NhaTrungBayNguyenSinhSac": {
         "title": "Nhà trưng bày Nguyễn Sinh Sắc",
         "shortDescription": "Tư liệu về cụ Nguyễn Sinh Sắc.",
         "fullDescription": "Trưng bày tư liệu, hiện vật về cuộc đời và sự nghiệp của cụ Phó bảng Nguyễn Sinh Sắc.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/nhatrungbaynguyensinhsac.jpg",
+        "showFull": true,
+        "color": "#ad782c"
       },
       "VomMoCuSac": {
         "title": "Vòm mộ cụ Nguyễn Sinh Sắc",
         "shortDescription": "Công trình hình cánh sen.",
         "fullDescription": "Công trình hình cánh sen với 9 đầu rồng, tượng trưng cho sự che chở và tôn kính.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/vommocusac.jpg",
+        "showFull": true,
+        "color": "#ad782c"
       },
       "NhaCuSac": {
         "title": "Nhà cụ Nguyễn Sinh Sắc",
         "shortDescription": "Không gian sinh hoạt của cụ.",
         "fullDescription": "Không gian tái hiện nơi sinh hoạt, chữa bệnh và dạy học của cụ khi sống tại Cao Lãnh.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/nhacusac.jpg",
+        "showFull": true,
+        "color": "#ad782c"
       },
       "DenThoCuSac": {
         "title": "Đền thờ cụ Nguyễn Sinh Sắc",
         "shortDescription": "Công trình thờ cúng trang nghiêm.",
         "fullDescription": "Công trình thờ cúng trang nghiêm, mang kiến trúc truyền thống với nhiều chi tiết chạm khắc tinh xảo.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/denthocusac.jfif",
+        "showFull": true,
+        "color": "#ad782c"
       },
       "TuongCuNguyenSinhSac": {
         "title": "Tượng cụ Nguyễn Sinh Sắc",
         "shortDescription": "Tượng tưởng niệm cụ Nguyễn Sinh Sắc.",
         "fullDescription": "Tượng tưởng niệm thể hiện sự tôn kính đối với cụ – một nhà nho yêu nước, thương dân.",
-        "image": "",
-        "showFull": true
+        "image": "assets/Map/area/tuongnguyensinhsac.jpg",
+        "showFull": true,
+        "color": "#ad782c"
       },
       "NhaOngCaNhiNguu": {
         "title": "Nhà ông Cả Nhì Ngưu",
         "shortDescription": "Nhà nơi cụ từng ở tại Cao Lãnh.",
         "fullDescription": "Ngôi nhà nơi cụ từng ở khi mới đến Cao Lãnh, thể hiện văn hóa sinh hoạt gia đình Nam Bộ.",
         "image": "",
-        "showFull": true
+        "showFull": true,
+        "color": "#5f3815"
       },
       "LoRen": {
         "title": "Lò rèn",
         "shortDescription": "Khu tái hiện nghề rèn truyền thống.",
         "fullDescription": "Khu tái hiện nghề rèn truyền thống trong làng Hòa An xưa.",
         "image": "",
-        "showFull": true
+        "showFull": true,
+        "color": "#5f3815"
       },
       "NhaOngNamGiao": {
         "title": "Nhà ông Năm Giáo",
         "shortDescription": "Nhà nơi cụ sinh sống và qua đời.",
         "fullDescription": "Ngôi nhà đơn sơ nơi cụ từng sinh sống, chữa bệnh và qua đời.",
-        "image": "",
-        "showFull": true
-      },
-      "NhaKho": {
-        "title": "Nhà kho",
-        "shortDescription": "",
-        "fullDescription": "",
-        "image": ""
+        "image": "assets/Map/area/nhaongnamgiao.jpg",
+        "showFull": true,
+        "color": "#5f3815"
       }
     }
   },

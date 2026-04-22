@@ -45,7 +45,7 @@ export function SectionBar({ section, isActive, onClick }: SectionBarProps) {
             style={{
               position: "absolute",
               right: "calc(100% + 10px)",
-              background: "rgb(var(--color-blue-dark))",
+              background: "rgb(var(--color-bg-beige))",
               border: "1px solid rgb(var(--color-primary)/0.35)",
               borderRadius: 6,
               padding: "0.25rem 0.6rem",

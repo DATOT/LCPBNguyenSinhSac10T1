@@ -313,5 +313,268 @@
     "title": "Về cụ phó bảng Nguyễn Sinh Sắc",
     "description": "Cụ Phó bảng Nguyễn Sinh Sắc (1862 – 1929) là một nhà nho yêu nước, vị quan thanh liêm và là thân sinh của Chủ tịch Hồ Chí Minh. Cuộc đời Cụ là tấm gương về đạo đức và tinh thần vì dân.\n\nDù đỗ đạt cao, Cụ sống giản dị, luôn bênh vực người nghèo và truyền bá tư tưởng yêu nước qua việc dạy học, chữa bệnh. Những năm cuối đời, Cụ gắn bó với Cao Lãnh và được nhân dân kính trọng.\n\nTư tưởng và nhân cách của Cụ đã ảnh hưởng sâu sắc đến Chủ tịch Hồ Chí Minh, trở thành nguồn cảm hứng cho nhiều thế hệ noi theo.",
     "image": "assets/AboutNguyenSinhSac/nguyensinhsac.png"
+  },
+  "gallery": {
+    "title": "Thư viện ảnh",
+    "loadingText": "Đang load posts",
+
+    "form": {
+      "title": "Để lại ấn tượng bằng một bài post",
+      "authorPlaceholder": "Tên của bạn(bỏ trống nếu Ẩn Danh)",
+      "titlePlaceholder": "*Tiêu đề",
+      "descriptionPlaceholder": "Miêu tả(có thể bỏ trống",
+      "submitText": "Đăng",
+      "dropIdleText": "Ấn hoặc kéo thả ảnh ở đây",
+      "dropActiveText": "Thả ảnh ở đây",
+      "dropWithFileText": "Ấn hoặc kéo thả ảnh khác vào để đổi",
+      "errorTitleRequired": "Thiếu tiêu đề",
+      "errorFileRequired": "Thiếu ảnh"
+    },
+
+    "card": {
+      "cta": "Ấn để tìm hiểu thêm→"
+    }
+  },
+  "footer": {
+    "projectInfo": {
+      "title": "Thông tin về dự án",
+      "authorLabel": "Người thực hiện",
+      "authorName": "Tập thể 10T1"
+    },
+    "heritageInfo": {
+      "title": "Thông tin khu di tích",
+      "facebookLabel": "Facebook",
+      "phone": "079 252 1218",
+      "email": "khuditichnguyensinhsac@gmail.com"
+    },
+    "contact": {
+      "title": "Contact us",
+      "facebookLabel": "Facebook",
+      "tiktokLabel": "Tiktok"
+    },
+    "sources": { "sourcesTitle": "Nguồn thông tin", "data": [] }
+  },
+  "teamsSection": {
+    "title": "Danh sách thành viên",
+    "teams": [
+      {
+        "title": "Team Science",
+        "members": [
+          {
+            "name": "Đặng Nguyễn Khánh Băng",
+            "image": "https://i.pravatar.cc/100?img=11",
+            "role": ""
+          },
+          {
+            "name": "Nguyễn Hữu Phúc Lợi",
+            "image": "https://i.pravatar.cc/100?img=12",
+            "role": ""
+          },
+          {
+            "name": "Lâm Thị Huỳnh Mai",
+            "image": "https://i.pravatar.cc/100?img=13",
+            "role": ""
+          },
+          {
+            "name": "Nguyễn Tấn Minh",
+            "image": "https://i.pravatar.cc/100?img=14",
+            "role": ""
+          },
+          {
+            "name": "Trần Phan Hà My",
+            "image": "https://i.pravatar.cc/100?img=15",
+            "role": ""
+          },
+          {
+            "name": "Phạm Gia Mỹ",
+            "image": "https://i.pravatar.cc/100?img=16",
+            "role": ""
+          },
+          {
+            "name": "Lê Minh Thông",
+            "image": "https://i.pravatar.cc/100?img=17",
+            "role": ""
+          },
+
+          {
+            "name": "Trần Ái Nhi",
+            "image": "https://i.pravatar.cc/100?img=18",
+            "role": ""
+          },
+          {
+            "name": "Dương Anh Khoa",
+            "image": "https://i.pravatar.cc/100?img=19",
+            "role": ""
+          },
+          {
+            "name": "Huỳnh Ngọc Minh Anh",
+            "image": "https://i.pravatar.cc/100?img=20",
+            "role": ""
+          },
+          {
+            "name": "Phạm Gia Khiêm",
+            "image": "https://i.pravatar.cc/100?img=21",
+            "role": ""
+          }
+        ]
+      },
+      {
+        "title": "Team Presentation",
+        "members": [
+          {
+            "name": "Nguyễn Trần Tấn Khoa",
+            "image": "https://i.pravatar.cc/100?img=31",
+            "role": ""
+          },
+          {
+            "name": "Lê Thị Mai Anh",
+            "image": "https://i.pravatar.cc/100?img=32",
+            "role": ""
+          },
+          {
+            "name": "Lê Triệu Vỹ",
+            "image": "https://i.pravatar.cc/100?img=33",
+            "role": ""
+          },
+          {
+            "name": "Trần Hồ Ngọc Trâm",
+            "image": "https://i.pravatar.cc/100?img=34",
+            "role": ""
+          },
+          {
+            "name": "Phạm Hồng Phương Anh",
+            "image": "https://i.pravatar.cc/100?img=35",
+            "role": ""
+          }
+        ]
+      },
+      {
+        "title": "Team IT",
+        "members": [
+          {
+            "name": "Bùi Phạm Khánh An",
+            "image": "https://i.pravatar.cc/100?img=41",
+            "role": ""
+          },
+          {
+            "name": "Mai Nguyễn Hải Bằng",
+            "image": "https://i.pravatar.cc/100?img=42",
+            "role": ""
+          },
+          {
+            "name": "Lâm Tiến Đạt",
+            "image": "https://i.pravatar.cc/100?img=67",
+            "role": ""
+          },
+          {
+            "name": "Võ Hồ Thiên Hương",
+            "image": "https://i.pravatar.cc/100?img=44",
+            "role": ""
+          },
+          {
+            "name": "Hà Bảo Khang",
+            "image": "https://i.pravatar.cc/100?img=45",
+            "role": ""
+          },
+          {
+            "name": "Trần Phạm Anh Khoa",
+            "image": "https://i.pravatar.cc/100?img=46",
+            "role": ""
+          },
+          {
+            "name": "Phạm Nguyễn Đăng Khôi",
+            "image": "https://i.pravatar.cc/100?img=47",
+            "role": ""
+          },
+          {
+            "name": "Nguyễn Tấn Phát",
+            "image": "https://i.pravatar.cc/100?img=48",
+            "role": ""
+          },
+          {
+            "name": "Trần Hữu Thành",
+            "image": "https://i.pravatar.cc/100?img=49",
+            "role": ""
+          }
+        ]
+      },
+      {
+        "title": "Team Media",
+        "members": [
+          {
+            "name": "Lê Ngân Phi Anh",
+            "image": "https://i.pravatar.cc/100?img=51",
+            "role": ""
+          },
+          {
+            "name": "Lê Nguyễn Quốc Anh",
+            "image": "https://i.pravatar.cc/100?img=52",
+            "role": ""
+          },
+          {
+            "name": "Nguyễn Tuấn Kiệt",
+            "image": "https://i.pravatar.cc/100?img=53",
+            "role": ""
+          },
+          {
+            "name": "Trần Thiên Kỳ",
+            "image": "https://i.pravatar.cc/100?img=54",
+            "role": ""
+          },
+          {
+            "name": "Văn Công Lợi",
+            "image": "https://i.pravatar.cc/100?img=55",
+            "role": ""
+          },
+          {
+            "name": "Phan Trọng Nhân",
+            "image": "https://i.pravatar.cc/100?img=56",
+            "role": ""
+          },
+          {
+            "name": "Bùi Thanh Sơn",
+            "image": "https://i.pravatar.cc/100?img=57",
+            "role": ""
+          },
+          {
+            "name": "Ngô Phát Thịnh",
+            "image": "https://i.pravatar.cc/100?img=58",
+            "role": ""
+          }
+        ]
+      }
+    ]
+  },
+  "headerSection": {
+    "locationTag": "Thành phố Cao Lãnh",
+    "province": "Đồng Tháp",
+
+    "badge": "Khu Di Tích Lịch Sử",
+
+    "titleTop": "Di Tích Quốc Gia",
+    "titleMain": "Nguyễn Sinh Sắc",
+
+    "subtitlePrefix": "Hồn Thiêng",
+    "subtitleHighlight": "Đất Cổ.",
+
+    "location": "Phường 4, TP. Cao Lãnh",
+    "time": "07:00 - 17:00",
+
+    "exploreLabel": "Khám phá",
+
+    "backgroundImage": "https://bcp.cdnchinhphu.vn/334894974524682240/2023/8/13/img2737-16919037726071551096263.jpg"
+  },
+
+  "navbar": {
+    "sections": [
+      { "id": "header", "label": "Trang đầu" },
+      { "id": "about-place", "label": "Giới thiệu di tích" },
+      { "id": "about-person", "label": "Nguyễn Sinh Sắc" },
+      { "id": "biography", "label": "Tiểu sử" },
+      { "id": "history", "label": "Lịch sử" },
+      { "id": "map", "label": "Bản đồ" },
+      { "id": "gallery", "label": "Thư viện ảnh" },
+      { "id": "members", "label": "Thành viên" }
+    ]
   }
 }

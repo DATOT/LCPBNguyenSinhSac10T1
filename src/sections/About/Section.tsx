@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 interface SectionProps {
   title: string;
@@ -8,27 +9,73 @@ interface SectionProps {
 }
 
 const Section = ({ title, description, image, varient }: SectionProps) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-120px" });
+
+  // ===== CONTAINER =====
+  const container = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.18,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  // ===== FADE UP (TEXT) =====
+  const fadeUp = {
+    hidden: { opacity: 0, y: 50, filter: "blur(10px)" },
+    visible: {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      transition: {
+        duration: 0.9,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
+  };
+
+  // ===== IMAGE (PARALLAX FEEL) =====
+  const imageAnim = {
+    hidden: { opacity: 0, scale: 1.1 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1.2,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
+  };
+
   // =========================
-  // PLACE (no longer hero)
+  // PLACE
   // =========================
   if (varient === "place") {
     return (
-      <section
+      <motion.section
+        ref={ref}
+        variants={container}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
         className="w-full py-12 px-6"
-        style={{
-          backgroundColor: "rgb(var(--color-surface))",
-        }}
+        style={{ backgroundColor: "rgb(var(--color-surface))" }}
       >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          {/* Image */}
-          <div className="relative h-[420px] overflow-hidden rounded-2xl">
+          
+          {/* IMAGE */}
+          <motion.div
+            variants={imageAnim as any}
+            className="relative h-[420px] overflow-hidden rounded-2xl"
+          >
             <img
               src={image}
               alt={title}
               className="w-full h-full object-cover"
             />
 
-            {/* subtle overlay */}
             <div
               className="absolute inset-0"
               style={{
@@ -36,46 +83,54 @@ const Section = ({ title, description, image, varient }: SectionProps) => {
                   "linear-gradient(to top, rgba(0,0,0,0.3), transparent)",
               }}
             />
-          </div>
+          </motion.div>
 
-          {/* Content */}
-          <div>
-            <h2
+          {/* CONTENT */}
+          <motion.div variants={container}>
+            <motion.h2
+              variants={fadeUp as any}
               className="text-4xl mb-6"
               style={{ color: "rgb(var(--color-primary))" }}
             >
               {title}
-            </h2>
+            </motion.h2>
 
-            <div
+            <motion.div
+              variants={fadeUp as any}
               className="w-20 h-[3px] mb-6"
               style={{ backgroundColor: "rgb(var(--color-secondary))" }}
             />
 
-            <p
+            <motion.p
+              variants={fadeUp as any}
               className="text-lg leading-relaxed"
               style={{ color: "rgb(var(--color-text-muted))" }}
             >
               {description}
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
     );
   }
 
   // =========================
-  // PERSON (important figure)
+  // PERSON
   // =========================
   return (
-    <section
+    <motion.section
+      ref={ref}
+      variants={container}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
       className="relative w-full py-24 px-6 overflow-hidden"
-      style={{
-        backgroundColor: "rgb(var(--color-bg-beige))",
-      }}
+      style={{ backgroundColor: "rgb(var(--color-bg-beige))" }}
     >
       {/* Background glow */}
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={isInView ? { opacity: 1 } : {}}
+        transition={{ duration: 1.2 }}
         className="absolute inset-0"
         style={{
           background:
@@ -84,9 +139,11 @@ const Section = ({ title, description, image, varient }: SectionProps) => {
       />
 
       <div className="relative max-w-5xl mx-auto text-center">
-        {/* Image */}
-        <div className="relative mx-auto w-[240px] h-[240px] md:w-[220px] md:h-[220px] mb-10">
-          {/* glowing frame */}
+        {/* IMAGE */}
+        <motion.div
+          variants={imageAnim as any}
+          className="relative mx-auto w-[240px] h-[240px] md:w-[220px] md:h-[220px] mb-10"
+        >
           <div
             className="absolute inset-0 rounded-full blur-2xl"
             style={{
@@ -94,7 +151,6 @@ const Section = ({ title, description, image, varient }: SectionProps) => {
             }}
           />
 
-          {/* portrait */}
           <img
             src={image}
             alt={title}
@@ -103,31 +159,32 @@ const Section = ({ title, description, image, varient }: SectionProps) => {
               borderColor: "rgb(var(--color-surface))",
             }}
           />
-        </div>
+        </motion.div>
 
-        {/* Name */}
-        <h2
+        {/* TEXT */}
+        <motion.h2
+          variants={fadeUp as any}
           className="text-4xl md:text-5xl mb-4"
           style={{ color: "rgb(var(--color-text))" }}
         >
           {title}
-        </h2>
+        </motion.h2>
 
-        {/* Accent line */}
-        <div
+        <motion.div
+          variants={fadeUp as any}
           className="mx-auto w-24 h-[3px] mb-8"
           style={{ backgroundColor: "rgb(var(--color-primary))" }}
         />
 
-        {/* Description */}
-        <p
+        <motion.p
+          variants={fadeUp as any}
           className="text-lg leading-relaxed max-w-2xl mx-auto"
           style={{ color: "rgb(var(--color-text-muted))" }}
         >
           {description}
-        </p>
+        </motion.p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

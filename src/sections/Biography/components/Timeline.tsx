@@ -18,8 +18,16 @@ export default function Timeline({
   onHover,
 }: Props) {
   return (
-    <div className="w-12 h-full flex flex-col items-center justify-center gap-3 relative">
-      <div className="absolute w-[2px] h-full bg-black/10" />
+    <div className="
+      w-12 h-full flex flex-col items-center justify-center gap-3 relative
+    ">
+      {/* Vertical line */}
+      <div
+        className="absolute w-[2px] h-full"
+        style={{
+          background: "rgba(var(--color-border) / 0.6)",
+        }}
+      />
 
       {data.map((item, i) => (
         <TimelineDot

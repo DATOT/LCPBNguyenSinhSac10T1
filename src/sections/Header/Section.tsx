@@ -1,5 +1,3 @@
-// Author: Habaokhangg
-// File: HeroMinimalParticles.tsx
 import React, { useState, useEffect } from 'react';
 
 // --- NATIVE ICONS ---
@@ -13,7 +11,27 @@ const ClockIcon = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
 );
 
-const HeroMinimalParticles: React.FC = () => {
+type HeroContent = {
+  locationTag: string;
+  province: string;
+
+  badge: string;
+
+  titleTop: string;
+  titleMain: string;
+
+  subtitlePrefix: string;
+  subtitleHighlight: string;
+
+  location: string;
+  time: string;
+
+  exploreLabel: string;
+
+  backgroundImage: string;
+};
+
+const HeroMinimalParticles: React.FC<{ content: HeroContent }> = ({ content }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -31,7 +49,7 @@ const HeroMinimalParticles: React.FC = () => {
   }));
 
   return (
-    <header className="relative w-full h-screen min-h-[750px] bg-zinc-950 text-zinc-50 overflow-hidden font-sans selection:bg-[#F5A623] selection:text-white">
+    <header className="relative w-full h-screen min-h-[750px] bg-zinc-950 text-zinc-50 overflow-hidden font-sans">
 
       <style dangerouslySetInnerHTML={{
         __html: `
@@ -53,22 +71,19 @@ const HeroMinimalParticles: React.FC = () => {
 
       {/* --- BACKGROUND & PARTICLES --- */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        {/* Bạn có thể thay link ảnh này thành ảnh flycam thực tế của Lăng */}
         <img
-          src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/8/13/img2737-16919037726071551096263.jpg"
+          src={content.backgroundImage}
           alt="Khu di tích"
           className={`h-full w-full object-cover transition-all duration-[3s] ${isLoaded ? 'opacity-90 scale-105 blur-0' : 'opacity-0 scale-110 blur-xl'}`}
         />
 
-        {/* ĐÃ CHỈNH SỬA: Lớp phủ Gradient sáng dần về bên phải (to-transparent) */}
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent"></div>
-        {/* Giữ lại một chút gradient từ dưới lên để phần footer dễ đọc */}
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent"></div>
 
         {particles.map((p) => (
           <div
             key={p.id}
-            className="absolute rounded-full bg-[#F5A623] pointer-events-none mix-blend-screen"
+            className="absolute rounded-full bg-[rgb(var(--color-accent))] pointer-events-none mix-blend-screen"
             style={{
               width: p.size, height: p.size,
               left: p.left, top: p.top,
@@ -82,18 +97,13 @@ const HeroMinimalParticles: React.FC = () => {
       {/* --- NAVIGATION --- */}
       <nav className={`relative z-20 w-full flex justify-between items-center px-6 lg:px-16 py-8 transition-all duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <div className="flex flex-col gap-1">
-          <span className="text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase text-amber-500">
-            Thành phố Cao Lãnh
+          <span className="text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase text-[rgb(var(--color-accent))]">
+            {content.locationTag}
           </span>
-          <span className="text-lg md:text-xl font-bold tracking-widest uppercase text-zinc-100" style={{ fontFamily: '"Playfair Display", serif' }}>
-            Đồng Tháp
+          <span className="text-lg md:text-xl font-bold tracking-widest uppercase text-zinc-100">
+            {content.province}
           </span>
         </div>
-
-        <button className="group flex flex-col items-end gap-2 p-4 -mr-4 hover:opacity-80 transition-opacity">
-          <span className="h-[2px] w-8 bg-zinc-300 transition-all duration-500 group-hover:bg-[#F5A623]"></span>
-          <span className="h-[2px] w-6 bg-zinc-300 transition-all duration-500 group-hover:bg-[#F5A623]"></span>
-        </button>
       </nav>
 
       {/* --- MAIN CONTENT --- */}
@@ -101,24 +111,27 @@ const HeroMinimalParticles: React.FC = () => {
         <div className="w-full max-w-6xl">
           {isLoaded && (
             <>
-              <div className="animate-entrance flex items-center gap-3 text-[#F5A623] mb-6" style={{ animationDelay: '0.2s' }}>
+              <div className="animate-entrance flex items-center gap-3 text-[rgb(var(--color-accent))] mb-6" style={{ animationDelay: '0.2s' }}>
                 <CompassIcon />
-                <p className="text-sm font-bold tracking-[0.2em] uppercase">Khu Di Tích Lịch Sử</p>
+                <p className="text-sm font-bold tracking-[0.2em] uppercase">{content.badge}</p>
               </div>
 
               <h1 className="animate-entrance flex flex-col font-bold leading-[1.05] tracking-tight uppercase drop-shadow-2xl mb-8" style={{ fontFamily: '"Playfair Display", serif', animationDelay: '0.4s' }}>
                 <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[80px] text-zinc-100">
-                  Di Tích Quốc Gia
+                  {content.titleTop}
                 </span>
-                <span className="text-5xl sm:text-6xl md:text-7xl lg:text-[96px] text-[#F5A623] drop-shadow-[0_0_40px_rgba(245,166,35,0.15)]">
-                  Nguyễn Sinh Sắc
+                <span className="text-5xl sm:text-6xl md:text-7xl lg:text-[96px] text-[rgb(var(--color-accent))] drop-shadow-[0_0_40px_rgba(245,166,35,0.15)]">
+                  {content.titleMain}
                 </span>
               </h1>
 
               <div className="animate-entrance flex items-center gap-4 pl-1" style={{ animationDelay: '0.6s' }}>
                 <div className="w-16 h-[1px] bg-zinc-500"></div>
                 <h2 className="text-2xl md:text-3xl font-light italic text-zinc-300 tracking-wide" style={{ fontFamily: '"Playfair Display", serif' }}>
-                  Hồn Thiêng <span className="font-semibold text-[#F5A623]">Đất Cổ.</span>
+                  {content.subtitlePrefix}{" "}
+                  <span className="font-semibold text-[rgb(var(--color-accent))]">
+                    {content.subtitleHighlight}
+                  </span>
                 </h2>
               </div>
             </>
@@ -134,18 +147,18 @@ const HeroMinimalParticles: React.FC = () => {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2 text-zinc-400">
             <MapPinIcon />
-            <span className="text-xs font-medium tracking-wider">Phường 4, TP. Cao Lãnh</span>
+            <span className="text-xs font-medium tracking-wider">{content.location}</span>
           </div>
           <div className="hidden sm:flex items-center gap-2 text-zinc-400">
             <ClockIcon />
-            <span className="text-xs font-medium tracking-wider">07:00 - 17:00</span>
+            <span className="text-xs font-medium tracking-wider">{content.time}</span>
           </div>
         </div>
 
         <div className="flex items-center gap-4 text-zinc-400">
-          <span className="text-[10px] tracking-[0.2em] uppercase">Khám phá</span>
+          <span className="text-[10px] tracking-[0.2em] uppercase">{content.exploreLabel}</span>
           <div className="w-[1px] h-8 bg-zinc-700 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1/2 bg-[#F5A623] animate-[bounce_2s_infinite]"></div>
+            <div className="absolute top-0 left-0 w-full h-1/2 bg-[rgb(var(--color-accent))] animate-[bounce_2s_infinite]"></div>
           </div>
         </div>
       </div>

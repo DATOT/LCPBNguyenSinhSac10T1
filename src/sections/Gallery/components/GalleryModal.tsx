@@ -1,11 +1,5 @@
-import { motion } from "framer-motion";
-
-type GalleryItem = {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-};
+import { motion, AnimatePresence } from "framer-motion";
+import { GalleryItem } from "../types";
 
 export default function GalleryModal({
   item,
@@ -15,64 +9,62 @@ export default function GalleryModal({
   onClose: () => void;
 }) {
   return (
-    <motion.div
-      className="fixed inset-0 flex items-center justify-center z-50 p-4"
-      style={{
-        background: "rgba(0,0,0,0.4)",
-        backdropFilter: "blur(8px)",
-      }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      onClick={onClose}
-    >
+    <AnimatePresence>
       <motion.div
-        layoutId={`card-${item.id}`}
-        onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-4xl rounded-2xl overflow-hidden flex flex-col md:flex-row"
-        style={{
-          background: "rgb(var(--color-surface-elevated))",
-          border: "1px solid rgb(var(--color-border))",
-          boxShadow: "0 20px 60px rgba(0,0,0,0.15)",
-        }}
+        key="backdrop"
+        className="
+          fixed inset-0 flex items-center justify-center z-50
+          backdrop-blur-sm
+        "
+        style={{ background: "rgba(0, 0, 0, 0.8)" }}
+        onClick={onClose}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
       >
-        {/* CLOSE BUTTON */}
-        <button
-          onClick={onClose}
-          className="absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center transition"
-          style={{
-            background: "rgba(var(--color-surface), 0.8)",
-            border: "1px solid rgb(var(--color-border))",
+        <motion.div
+          key="modal"
+          className="
+            w-full max-w-lg
+            rounded-[var(--radius-lg)]
+            p-4
+            shadow-xl
+            border
+            bg-[rgb(var(--color-surface-elevated))]
+            border-[rgb(var(--color-border))]
+          "
+          onClick={(e) => e.stopPropagation()}
+          initial={{ opacity: 0, scale: 0.9, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.9, y: 20 }}
+          transition={{
+            duration: 0.25,
+            ease: "easeOut",
           }}
         >
-          ✕
-        </button>
-
-        {/* IMAGE */}
-        <div className="md:w-1/2 bg-[rgb(var(--color-surface))] flex items-center justify-center">
           <img
             src={item.image}
-            className="max-h-[70vh] w-full object-contain"
+            className="
+              rounded-[var(--radius-md)]
+              mb-3
+              w-full
+              object-cover
+            "
           />
-        </div>
 
-        {/* CONTENT */}
-        <div className="p-6 md:w-1/2 flex flex-col justify-center">
-          <h2
-            className="text-2xl font-semibold mb-3 leading-tight"
-            style={{ color: "rgb(var(--color-text))" }}
-          >
+          <h2 className="text-lg font-semibold text-[rgb(var(--color-text))]">
             {item.title}
           </h2>
 
-          <p
-            className="text-sm leading-relaxed"
-            style={{ color: "rgb(var(--color-text-muted))" }}
-          >
+          <p className="mt-2 text-sm leading-relaxed text-[rgb(var(--color-text-muted))]">
             {item.description}
           </p>
-        </div>
+
+          <p className="text-xs mt-4 text-[rgb(var(--color-text-muted)/0.8)]">
+            {item.author} • {new Date(item.date).toLocaleString()}
+          </p>
+        </motion.div>
       </motion.div>
-    </motion.div>
+    </AnimatePresence>
   );
 }

@@ -49,7 +49,7 @@ export default function Section({ data, title }: SectionProps) {
       <div className="sticky top-0 h-screen overflow-hidden">
         {/* HEADER */}
         <div
-          className="flex items-center px-10 h-[10%] border-b"
+          className="flex items-center px-4 h-[10%] border-b"
           style={{ borderColor: "rgb(var(--color-border))" }}
         >
           <h1

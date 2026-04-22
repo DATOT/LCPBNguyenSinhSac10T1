@@ -86,19 +86,11 @@ export default function Section({ title, data }: SectionProps) {
   return (
     <section
       ref={ref}
-      className="h-[1200vh] relative"
+      className="h-[1100vh] relative"
       style={{
         backgroundColor: "rgb(var(--color-bg-beige))",
       }}
     >
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(circle at center, rgba(var(--color-accent),0.08), transparent 70%)",
-        }}
-      />
-
       <div className="sticky top-0 h-screen flex">
 
         {/* TIMELINE */}
@@ -127,7 +119,7 @@ export default function Section({ title, data }: SectionProps) {
               className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[50%] h-[2px]"
               style={{
                 background:
-                  "linear-gradient(to right, transparent, rgba(0,0,0,0.2), transparent)",
+                  "linear-gradient(to right, transparent, rgba(var(--color-background-opposite)/0.2), transparent)",
               }}
             />
           </div>
@@ -154,7 +146,7 @@ export default function Section({ title, data }: SectionProps) {
                 className="absolute top-1/2 right-0 -translate-y-1/2 w-[2px] h-[60%]"
                 style={{
                   background:
-                    "linear-gradient(to bottom, transparent, rgba(0,0,0,0.2), transparent)",
+                    "linear-gradient(to bottom, transparent, rgba(var(--color-background-opposite)/0.2), transparent)",
                 }}
               />
             </div>
@@ -196,7 +188,7 @@ export default function Section({ title, data }: SectionProps) {
                           ? "rgb(var(--color-surface))"
                           : "transparent",
                         boxShadow: isActive
-                          ? "0 10px 30px rgba(0,0,0,0.1)"
+                          ? "0 10px 30px rgba(var(--color-background-opposite)/0.1)"
                           : "none",
                       }}
                     >

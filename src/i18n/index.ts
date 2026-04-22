@@ -2,11 +2,11 @@ import vi from "./vi.json";
 import en from "./en.json";
 import { ContentSchema } from "./types";
 
-export type Lang = "vi"; //| "en";
+export type Lang = "vi" | "en";
 
 const resources: Record<Lang, ContentSchema> = {
   vi: vi as ContentSchema,
-  //en: en as ContentSchema,
+  en: en as ContentSchema,
 };
 export function getLang(): Lang {
   const params = new URLSearchParams(window.location.search);

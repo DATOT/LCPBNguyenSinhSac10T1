@@ -34,7 +34,7 @@ export default function Section({ mapInfo, title, hint }: SectionProps) {
 
   return (
     <div className="relative w-full h-full overflow-hidden bg-[rgb(var(--color-surface))] text-[rgb(var(--color-text))]">
-      <div className="text-3xl font-semibold p-2">{title}</div>
+      <h1 className="text-3xl font-semibold text-[rgb(var(--color-text))] p-2">{title}</h1>
 
       <AnimatePresence>
         {showHint && (
@@ -60,9 +60,9 @@ export default function Section({ mapInfo, title, hint }: SectionProps) {
             className="fixed z-50 pointer-events-none max-w-xs"
             style={{ left: tooltip.x + 14, top: tooltip.y + 14 }}
           >
-            <div className="p-3 rounded-md bg-white/30 backdrop-blur text-black">
+            <div className="p-3 rounded-md bg-[rgb(var(--color-background))]/30 backdrop-blur text-[rgb(var(--color-text))]">
               <h3 className="text-sm font-semibold">{tooltip.content.title}</h3>
-              <p className="text-xs opacity-80">{tooltip.content.shortDescription}</p>
+              <p className="text-xs opacity-90">{tooltip.content.shortDescription}</p>
             </div>
           </motion.div>
         )}

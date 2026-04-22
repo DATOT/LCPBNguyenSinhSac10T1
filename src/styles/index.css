@@ -15,11 +15,13 @@
 
   /* ========== NEUTRALS ========== */
   --color-background: 255 255 255; /* white */
+  --color-background-opposite: 17 24 39; /* gray-900 */
   --color-surface: 249 250 251; /* gray-50 */
   --color-surface-elevated: 255 255 255;
 
   --color-text: 17 24 39; /* gray-900 */
   --color-text-muted: 107 114 128; /* gray-500 */
+  --color-text-opposite: 238 231 216; /* gray-900 */
 
   --color-border: 229 231 235; /* gray-200 */
   --color-divider: 243 244 246;
@@ -41,7 +43,7 @@
   --color-bg-beige: 247 244 230; /* #f7f4e6 */
   --color-bg-yellow: 254 255 198; /* #feffc6 */
 
-  /* ========== DARK ACCENTS (keep yours) ========== */
+  /* ========== DARK ACCENTS ========== */
   --color-green-dark: 28 56 40; /* #1c3828 */
   --color-blue-dark: 6 6 68; /* #060644 */
 
@@ -64,29 +66,51 @@
 
 /* ========== DARK MODE ========== */
 .dark {
-  /* BASE */
+  /* ========== BRAND COLORS ========== */
+  --color-primary: 96 165 250; /* blue-400 */
+  --color-primary-foreground: 17 24 39;
+
+  --color-secondary: 244 114 182; /* pink-400 */
+  --color-secondary-foreground: 17 24 39;
+
+  /*--color-accent: 232 121 249; /* fuchsia-400 */
+  --color-accent-foreground: 17 24 39;
+
+  /* ========== NEUTRALS ========== */
   --color-background: 17 24 39; /* gray-900 */
+  --color-background-opposite: 255 255 255;
   --color-surface: 31 41 55; /* gray-800 */
   --color-surface-elevated: 55 65 81; /* gray-700 */
 
   --color-text: 243 244 246; /* gray-100 */
   --color-text-muted: 156 163 175; /* gray-400 */
+  --color-text-opposite: 17 24 39; /* true opposite */
 
   --color-border: 75 85 99; /* gray-600 */
   --color-divider: 55 65 81;
 
-  /* BRAND (slightly brighter for contrast) */
-  --color-primary: 96 165 250; /* blue-400 */
-  --color-secondary: 244 114 182; /* pink-400 */
-  --color-accent: 232 121 249; /* fuchsia-400 */
-
-  /* STATES */
+  /* ========== STATE COLORS ========== */
   --color-success: 74 222 128;
-  --color-warning: 250 204 21;
-  --color-danger: 248 113 113;
-  --color-info: 96 165 250;
+  --color-success-foreground: 17 24 39;
 
-  /* INTERACTION */
+  --color-warning: 250 204 21;
+  --color-warning-foreground: 17 24 39;
+
+  --color-danger: 248 113 113;
+  --color-danger-foreground: 17 24 39;
+
+  --color-info: 96 165 250;
+  --color-info-foreground: 17 24 39;
+
+  /* ========== SPECIAL BACKGROUNDS ========== */
+  --color-bg-beige: 38 38 30;
+  --color-bg-yellow: 64 64 24;
+
+  /* ========== DARK ACCENTS (can stay same or slightly brighter) ========== */
+  --color-green-dark: 34 197 94;
+  --color-blue-dark: 96 165 250;
+
+  /* ========== INTERACTION ========== */
   --color-hover-overlay: 255 255 255 / 0.05;
   --color-focus-ring: 96 165 250;
 }
@@ -97,20 +121,12 @@
 @layer base {
   body {
     @apply antialiased;
-    background-color: rgb(var(--color-bg));
+    background-color: rgb(var(--color-background));
     color: rgb(var(--color-text));
   }
 
-  h1 {
-    @apply text-3xl font-bold;
-  }
-
-  h2 {
-    @apply text-2xl font-semibold;
-  }
-
   p {
-    color: rgb(var(--color-muted));
+    color: rgb(var(--color-text-muted));
   }
 }
 @layer utilities {

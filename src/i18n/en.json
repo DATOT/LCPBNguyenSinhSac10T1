@@ -1,235 +1,286 @@
 {
   "biography": {
-    "title": "Cuộc đời và sự nghiệp cụ Nguyễn Sinh Sắc",
+    "title": "Life and Career of Nguyen Sinh Sac",
     "data": [
       {
         "year": 1862,
-        "title": "Sinh ra tại làng Sen (Nghệ An)",
-        "description": "Cụ Nguyễn Sinh Sắc sinh năm 1862 tại làng Sen, xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An trong một gia đình nông dân."
+        "title": "Born in Sen Village (Nghe An)",
+        "description": "Nguyen Sinh Sac was born in 1862 in Sen Village, Kim Lien Commune, Nam Dan District, Nghe An Province, into a farming family."
       },
       {
         "year": 1878,
-        "title": "Mồ côi và được nuôi dưỡng, bắt đầu con đường học vấn",
-        "description": "Sau khi mồ côi cha mẹ, lúc 16 tuổi cụ được nhà nho Hoàng Xuân Đường nhận nuôi, tạo điều kiện học hành. Cụ nổi tiếng thông minh, hiếu học và nằm trong nhóm 'Nam Đàn tứ hổ'."
+        "title": "Orphaned and began his education",
+        "description": "After losing his parents, at age 16 he was adopted by scholar Hoang Xuan Duong, who supported his education. He was known for his intelligence and diligence, and was one of the 'Four Tigers of Nam Dan'."
       },
       {
         "year": 1884,
-        "title": "Kết hôn với Hoàng Thị Loan",
-        "description": "Ở tuổi 22, cụ Nguyễn Sinh Sắc kết hôn với Hoàng Thị Loan, người bạn đời gắn bó trong giai đoạn đầu lập thân và học tập."
+        "title": "Married Hoang Thi Loan",
+        "description": "At age 22, he married Hoang Thi Loan, his life partner during his early years of career and study."
       },
       {
         "year": 1894,
-        "title": "Đỗ Cử nhân trong khoa thi Hương",
-        "description": "Cụ đỗ Cử nhân, đánh dấu bước tiến quan trọng trong con đường khoa bảng và sự nghiệp học vấn Nho học."
+        "title": "Passed the Huong Examination (Bachelor degree)",
+        "description": "He passed the regional examination, marking an important milestone in his Confucian academic career."
       },
       {
         "year": 1895,
-        "title": "Thi Hội không đỗ, tiếp tục học tập và nghiên cứu",
-        "description": "Cụ vào Huế thi Hội nhưng không đỗ. Sau đó cụ làm Hành tẩu bộ Hộ và theo học Quốc Tử Giám, tiếp tục nuôi chí học tập và rèn luyện."
+        "title": "Failed the Hoi Examination, continued studying",
+        "description": "He went to Hue to take the metropolitan exam but did not pass. He later worked at the Ministry of Finance and studied at the Imperial Academy, continuing his academic pursuit."
       },
       {
         "year": 1901,
-        "title": "Đỗ Phó bảng và chọn con đường dạy học",
-        "description": "Cụ đỗ Phó bảng. Ban đầu từ chối làm quan, sống giản dị bằng nghề dạy học, đọc sách tân thư và giao du với các sĩ phu yêu nước."
+        "title": "Earned Pho Bang degree and chose teaching",
+        "description": "He passed the Pho Bang exam. Initially refusing official positions, he lived modestly as a teacher, reading modern texts and interacting with patriotic scholars."
       },
       {
         "year": 1906,
-        "title": "Nhậm chức Thừa biện bộ Lễ và tư tưởng tiến bộ",
-        "description": "Cụ tham gia triều đình với chức Thừa biện bộ Lễ. Cụ có tư tưởng tiến bộ, phê phán quan trường và đề cao tinh thần yêu nước, thương dân."
+        "title": "Served in the Ministry of Rites",
+        "description": "He joined the royal court as a clerk in the Ministry of Rites. He held progressive views, criticized corruption, and emphasized patriotism and compassion for the people."
       },
       {
         "year": 1909,
-        "title": "Làm Tri huyện Bình Khê, nổi tiếng thanh liêm",
-        "description": "Cụ được bổ nhiệm làm Tri huyện Bình Khê (Bình Định). Trong thời gian này, cụ bảo vệ dân nghèo, chống cường hào áp bức và có quan hệ với nhiều nhà nho yêu nước."
+        "title": "District Magistrate of Binh Khe",
+        "description": "He was appointed District Magistrate of Binh Khe (Binh Dinh). He became known for integrity, protecting the poor and opposing local tyrants."
       },
       {
         "year": 1910,
-        "title": "Bị giáng chức do vụ án cường hào",
-        "description": "Sau một vụ xử lý cường hào dẫn đến cái chết của người này, cụ bị triều đình xử phạt và giáng chức."
+        "title": "Demoted after a legal case",
+        "description": "After handling a case involving a local tyrant that resulted in death, he was punished and demoted by the court."
       },
       {
         "year": 1917,
-        "title": "Về Cao Lãnh, dạy học và chữa bệnh cứu người",
-        "description": "Cụ về sống tại Cao Lãnh (Đồng Tháp). Tại đây cụ dạy học, bốc thuốc chữa bệnh và tiếp tục tham gia hoạt động cùng các sĩ phu yêu nước."
+        "title": "Moved to Cao Lanh",
+        "description": "He settled in Cao Lanh (Dong Thap), where he taught, practiced medicine, and continued engaging with patriotic scholars."
       },
       {
         "year": 1929,
-        "title": "Qua đời tại Cao Lãnh",
-        "description": "Cuối tháng 11 năm 1929, cụ Nguyễn Sinh Sắc qua đời tại Cao Lãnh và được an táng gần chùa Hòa Long. Sự kiện được nhiều báo chí đương thời đưa tin, thể hiện sự kính trọng của xã hội."
+        "title": "Passed away in Cao Lanh",
+        "description": "In late November 1929, Nguyen Sinh Sac passed away in Cao Lanh and was buried near Hoa Long Pagoda. His passing was widely reported, reflecting public respect."
       }
     ]
   },
 
   "historyOfSite": {
-    "title": "Hình thành và phát triển",
+    "title": "Formation and Development of the Site",
     "data": [
       {
-        "time": "Trước 1954",
-        "title": "Mộ ban đầu",
-        "description": "Mộ cụ Nguyễn Sinh Sắc lúc đầu được đắp bằng đất, về sau nhân dân trong vùng đã tôn lại bằng xi măng, gạch và ngói."
+        "time": "Before 1954",
+        "title": "Original grave",
+        "description": "The grave was initially made of earth, later restored by locals using cement, bricks, and tiles."
       },
       {
         "time": "1954",
-        "title": "Xây dựng lại",
-        "description": "Các đơn vị bộ đội cùng nhân dân xây dựng lại ngôi mộ bằng xi măng, có lan can sắt bao bọc và bia mộ."
+        "title": "Reconstruction",
+        "description": "Soldiers and local people rebuilt the grave with cement, iron railings, and a gravestone."
       },
       {
         "time": "1968",
-        "title": "Bị hư hại",
-        "description": "Ngôi mộ bị hư hại xung quanh do bom giặc trong chiến tranh."
+        "title": "Damaged during war",
+        "description": "The grave was damaged by bombings during the war."
       },
       {
         "time": "1975 - 1977",
-        "title": "Xây dựng khu di tích",
-        "description": "Sau khi đất nước thống nhất, Khu di tích Nguyễn Sinh Sắc được khởi công ngày 22/8/1975 và khánh thành ngày 13/2/1977."
+        "title": "Site construction",
+        "description": "After reunification, construction began on August 22, 1975 and was completed on February 13, 1977."
       },
       {
         "time": "1990",
-        "title": "Nhà sàn Bác Hồ & Ao Sen",
-        "description": "Xây dựng mô hình nhà sàn Bác Hồ (tỉ lệ 1:1) và Ao Sen Đồng Tháp nhân dịp kỷ niệm 100 năm ngày sinh của Bác."
+        "title": "Ho Chi Minh Stilt House & Lotus Pond",
+        "description": "A full-scale model of Ho Chi Minh’s stilt house and a lotus pond were built to commemorate his 100th birthday."
       },
       {
         "time": "1992",
-        "title": "Di tích quốc gia",
-        "description": "Khu di tích Nguyễn Sinh Sắc được công nhận là Di tích lịch sử văn hóa cấp Quốc gia (09/04/1992)."
+        "title": "National heritage recognition",
+        "description": "The site was officially recognized as a National Historical and Cultural Relic on April 9, 1992."
       },
       {
         "time": "2010",
-        "title": "Bảo tồn & phát huy",
-        "description": "Đưa vào sử dụng dự án bảo tồn, tôn tạo với nhiều hạng mục như nhà trưng bày, phục dựng Làng Hòa An xưa (22.000m²), tái hiện đời sống và nghề truyền thống Nam Bộ."
+        "title": "Restoration and expansion",
+        "description": "A major preservation project added exhibition houses and recreated the old Hoa An Village (22,000m²), showcasing traditional Southern lifestyles."
       },
       {
         "time": "2012",
-        "title": "Đền thờ",
-        "description": "Khánh thành Đền thờ nhằm tỏ lòng tôn kính và tưởng nhớ công ơn cụ Phó bảng Nguyễn Sinh Sắc."
+        "title": "Temple inauguration",
+        "description": "A temple was inaugurated to honor Nguyen Sinh Sac."
       },
       {
-        "time": "Hằng năm (27/10 ÂL)",
-        "title": "Lễ giỗ Cụ",
-        "description": "Nhân dân hội tụ tham dự lễ giỗ trong không khí trang nghiêm, thể hiện truyền thống “Uống nước nhớ nguồn”."
+        "time": "Annually (Lunar Oct 27)",
+        "title": "Memorial ceremony",
+        "description": "People gather annually in a solemn ceremony, expressing gratitude and remembrance."
       },
       {
-        "time": "Lễ hội cấp tỉnh",
-        "title": "Nâng cấp lễ hội",
-        "description": "Tỉnh Đồng Tháp đã nâng ngày giỗ Cụ thành lễ hội cấp tỉnh hằng năm."
+        "time": "Provincial festival",
+        "title": "Festival upgrade",
+        "description": "The memorial ceremony has been elevated to a provincial-level festival."
       },
       {
         "time": "16/12/2025",
-        "title": "Di tích quốc gia đặc biệt",
-        "description": "Đón nhận bằng xếp hạng Di tích quốc gia đặc biệt Mộ cụ Phó bảng Nguyễn Sinh Sắc."
+        "title": "Special National Relic",
+        "description": "The site was recognized as a Special National Relic."
       }
     ]
   },
+
   "mapSection": {
+    "title": "Site Map",
+    "hint": "Try clicking or hovering over areas",
     "mapInfo": {
       "NghiMon": {
-        "title": "Nghi môn",
-        "description": "Cổng chính dẫn vào khu di tích, mang ý nghĩa trang nghiêm, là nơi đánh dấu không gian tâm linh và lịch sử."
-      },
-      "Cong1": {
-        "title": "Cổng phụ",
-        "description": "Lối vào phụ phục vụ khách tham quan, kết nối các khu vực bên trong khu di tích."
-      },
-      "Cong2": {
-        "title": "Cổng phụ",
-        "description": "Cổng phụ giúp phân luồng khách tham quan và đảm bảo sự thuận tiện trong di chuyển."
-      },
-      "Cong3": {
-        "title": "Cổng phụ",
-        "description": "Lối vào hỗ trợ các hoạt động quản lý và tham quan trong khu di tích."
-      },
-      "Cong4": {
-        "title": "Cổng phụ",
-        "description": "Kết nối các khu chức năng bên trong, tạo sự thông thoáng trong di chuyển."
-      },
-      "Cong5": {
-        "title": "Cổng phụ",
-        "description": "Cổng phụ phục vụ khách tham quan và các hoạt động nội bộ."
+        "title": "Main Gate",
+        "shortDescription": "The main entrance to the site.",
+        "fullDescription": "The main entrance marking the sacred and historical space.",
+        "image": "assets/Map/area/nghimon.jpg",
+        "showFull": true,
+        "color": "#ec1922"
       },
       "BaiDoXe": {
-        "title": "Bãi đỗ xe",
-        "description": "Khu vực dành cho xe của khách tham quan, đảm bảo trật tự và an toàn."
-      },
-      "Nhakho": {
-        "title": "Nhà kho",
-        "description": "Nơi lưu trữ vật tư, thiết bị phục vụ công tác bảo tồn và vận hành khu di tích."
-      },
-      "NhaTrungBayDieuKhac": {
-        "title": "Nhà trưng bày điêu khắc",
-        "description": "Trưng bày các tác phẩm điêu khắc mang giá trị nghệ thuật và lịch sử liên quan đến khu di tích."
-      },
-      "NhaTrungBayHoChiMinh": {
-        "title": "Nhà trưng bày Hồ Chí Minh",
-        "description": "Trưng bày tư liệu, hình ảnh về Chủ tịch Hồ Chí Minh và mối liên hệ với thân sinh của Người."
+        "title": "Parking Area",
+        "shortDescription": "",
+        "color": "#f78d54"
       },
       "NhaSanBacHo": {
-        "title": "Nhà sàn Bác Hồ",
-        "description": "Mô hình phục dựng theo tỉ lệ 1:1, tái hiện không gian sống giản dị, gần gũi thiên nhiên của Bác Hồ."
+        "title": "Ho Chi Minh Stilt House",
+        "shortDescription": "Replica of his living space.",
+        "fullDescription": "A 1:1 replica recreating Ho Chi Minh’s simple lifestyle.",
+        "image": "assets/Map/area/nhasanbacho.jpg",
+        "showFull": true,
+        "color": "#ec038b"
       },
       "NhaBatDan": {
-        "title": "Nhà Bát Dần",
-        "description": "Kiểu nhà truyền thống Nam Bộ với kết cấu 8 cột, đảm bảo thông thoáng và thích nghi với khí hậu."
-      },
-      "NhaChuDinh": {
-        "title": "Nhà chữ Đinh",
-        "description": "Kiến trúc nhà truyền thống hình chữ Đinh, thể hiện nếp sống và văn hóa gia đình Nam Bộ."
-      },
-      "NhaNocNgua": {
-        "title": "Nhà Nọc Ngựa",
-        "description": "Ngôi nhà có kết cấu đặc biệt với hệ cột giữa chịu lực, tạo không gian rộng và thoáng."
-      },
-      "NhaMat": {
-        "title": "Nhà truyền thống",
-        "description": "Không gian tái hiện đời sống sinh hoạt của người dân Nam Bộ xưa."
-      },
-      "NhaTrenCoc": {
-        "title": "Nhà trên cọc",
-        "description": "Nhà sàn xây trên cọc, phù hợp điều kiện ngập nước, thể hiện sự thích nghi với thiên nhiên."
-      },
-      "WC": {
-        "title": "Nhà vệ sinh",
-        "description": "Khu vệ sinh phục vụ nhu cầu sinh hoạt của khách tham quan."
-      },
-      "QuanLyKhuDiTich": {
-        "title": "Nhà quản lý khu di tích",
-        "description": "Nơi điều hành, quản lý và tổ chức các hoạt động trong khu di tích."
-      },
-      "NhaTrungBayNguyenSinhSac": {
-        "title": "Nhà trưng bày Nguyễn Sinh Sắc",
-        "description": "Trưng bày tư liệu, hiện vật về cuộc đời và sự nghiệp của cụ Phó bảng Nguyễn Sinh Sắc."
-      },
-      "VomMoCuSac": {
-        "title": "Vòm mộ cụ Nguyễn Sinh Sắc",
-        "description": "Công trình hình cánh sen với 9 đầu rồng, tượng trưng cho sự che chở và tôn kính."
-      },
-      "NhaCuSac": {
-        "title": "Nhà cụ Nguyễn Sinh Sắc",
-        "description": "Không gian tái hiện nơi sinh hoạt, chữa bệnh và dạy học của cụ khi sống tại Cao Lãnh."
+        "title": "Bat Dan House",
+        "shortDescription": "Traditional 8-pillar house.",
+        "fullDescription": "A traditional Southern house with 8 pillars, designed for ventilation.",
+        "image": "assets/Map/area/nhabatdan.jpg",
+        "showFull": true,
+        "color": "#0200fc"
       },
       "DenThoCuSac": {
-        "title": "Đền thờ cụ Nguyễn Sinh Sắc",
-        "description": "Công trình thờ cúng trang nghiêm, mang kiến trúc truyền thống với nhiều chi tiết chạm khắc tinh xảo."
-      },
-      "TuongCuNguyenSinhSac": {
-        "title": "Tượng cụ Nguyễn Sinh Sắc",
-        "description": "Tượng tưởng niệm thể hiện sự tôn kính đối với cụ – một nhà nho yêu nước, thương dân."
-      },
-      "NhaOngCaNhiNguu": {
-        "title": "Nhà ông Cả Nhì Ngưu",
-        "description": "Ngôi nhà nơi cụ từng ở khi mới đến Cao Lãnh, thể hiện văn hóa sinh hoạt gia đình Nam Bộ."
-      },
-      "LoRen": {
-        "title": "Lò rèn",
-        "description": "Khu tái hiện nghề rèn truyền thống trong làng Hòa An xưa."
-      },
-      "NhaOngNamGiao": {
-        "title": "Nhà ông Năm Giáo",
-        "description": "Ngôi nhà đơn sơ nơi cụ từng sinh sống, chữa bệnh và qua đời."
-      },
-      "NhaKho": {
-        "title": "Nhà kho",
-        "description": "Khu lưu trữ vật dụng và thiết bị phục vụ hoạt động của khu di tích."
+        "title": "Nguyen Sinh Sac Temple",
+        "shortDescription": "A place of worship.",
+        "fullDescription": "A solemn temple with traditional architecture and intricate carvings.",
+        "image": "assets/Map/area/denthocusac.jfif",
+        "showFull": true,
+        "color": "#ad782c"
       }
     }
+  },
+
+  "aboutTheSite": {
+    "title": "About the Site",
+    "description": "Nguyen Sinh Sac Relic Site is a historical and cultural complex in Cao Lanh, Dong Thap, and the resting place of Nguyen Sinh Sac, father of President Ho Chi Minh.\n\nThe site combines traditional architecture with a peaceful ecological environment, including the grave area, temple, lotus pond, and recreated Hoa An Village.\n\nIt serves not only as a memorial but also as a place to foster national pride and preserve cultural heritage.",
+    "image": "assets/AboutTheSite/khuditichnguyensinhsac.jpg"
+  },
+
+  "aboutNguyenSinhSac": {
+    "title": "About Nguyen Sinh Sac",
+    "description": "Nguyen Sinh Sac (1862–1929) was a patriotic Confucian scholar and an upright mandarin, best known as the father of President Ho Chi Minh.\n\nDespite his academic success, he lived modestly, defended the poor, and spread patriotic ideals through teaching and medicine.\n\nHis character and ideology deeply influenced Ho Chi Minh and continue to inspire generations.",
+    "image": "assets/AboutNguyenSinhSac/nguyensinhsac.png"
+  },
+
+  "gallery": {
+    "title": "Gallery",
+    "loadingText": "Loading posts",
+
+    "form": {
+      "title": "Leave your impression with a post",
+      "authorPlaceholder": "Your name (leave blank to stay anonymous)",
+      "titlePlaceholder": "*Title",
+      "descriptionPlaceholder": "Description (optional)",
+      "submitText": "Post",
+      "dropIdleText": "Click or drag an image here",
+      "dropActiveText": "Drop the image here",
+      "dropWithFileText": "Click or drag another image to replace",
+      "errorTitleRequired": "Title is required",
+      "errorFileRequired": "Image is required"
+    },
+
+    "card": {
+      "cta": "Click to learn more →"
+    }
+  },
+
+  "footer": {
+    "projectInfo": {
+      "title": "Project Information",
+      "authorLabel": "Developed by",
+      "authorName": "Class 10T1"
+    },
+    "heritageInfo": {
+      "title": "Site Information",
+      "facebookLabel": "Facebook",
+      "phone": "079 252 1218",
+      "email": "khuditichnguyensinhsac@gmail.com"
+    },
+    "contact": {
+      "title": "Contact us",
+      "facebookLabel": "Facebook",
+      "tiktokLabel": "TikTok"
+    },
+    "sources": {
+      "sourcesTitle": "Sources",
+      "data": []
+    }
+  },
+
+  "teamsSection": {
+    "title": "Team Members",
+    "teams": [
+      {
+        "title": "IT Team",
+        "members": [
+          {
+            "image": "https://i.pravatar.cc/100?img=4",
+            "name": "Dat",
+            "role": "Developer, Leader"
+          },
+          {
+            "image": "https://i.pravatar.cc/100?img=61",
+            "name": "Ha Bao Khang",
+            "role": "Developer"
+          }
+        ]
+      },
+      {
+        "title": "Design Team",
+        "members": [
+          {
+            "image": "https://i.pravatar.cc/100?img=32",
+            "name": "Bui Pham Khanh An",
+            "role": "Designer"
+          }
+        ]
+      }
+    ]
+  },
+  "headerSection": {
+    "locationTag": "Cao Lanh City",
+    "province": "Dong Thap",
+
+    "badge": "Historical Site",
+
+    "titleTop": "National Heritage",
+    "titleMain": "Nguyen Sinh Sac",
+
+    "subtitlePrefix": "Sacred Spirit",
+    "subtitleHighlight": "Ancient Land.",
+
+    "location": "Ward 4, Cao Lanh City",
+    "time": "07:00 - 17:00",
+
+    "exploreLabel": "Explore",
+
+    "backgroundImage": "https://bcp.cdnchinhphu.vn/334894974524682240/2023/8/13/img2737-16919037726071551096263.jpg"
+  },
+  "navbar": {
+    "sections": [
+      { "id": "header", "label": "Header" },
+      { "id": "about-place", "label": "About the Site" },
+      { "id": "about-person", "label": "Nguyen Sinh Sac" },
+      { "id": "biography", "label": "Biography" },
+      { "id": "history", "label": "History" },
+      { "id": "map", "label": "Map" },
+      { "id": "gallery", "label": "Gallery" },
+      { "id": "members", "label": "Members" }
+    ]
   }
 }

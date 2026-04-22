@@ -1,110 +1,168 @@
-import React from 'react';
-import { Users, Globe, Phone, Mail, Music } from 'lucide-react';
+import React from "react";
+import { Users, Globe, Phone, Mail, Music } from "lucide-react";
 
-const Section: React.FC = () => {
+type FooterProps = {
+  projectInfo: {
+    title: string;
+    authorLabel: string;
+    authorName: string;
+  };
+
+  heritageInfo: {
+    title: string;
+    facebookLabel: string;
+    phone: string;
+    email: string;
+  };
+
+  contact: {
+    title: string;
+    facebookLabel: string;
+    tiktokLabel: string;
+  };
+
+  sources: {
+    sourcesTitle: string;
+    data: string[];
+  };
+};
+
+const Section: React.FC<FooterProps> = ({
+  projectInfo,
+  heritageInfo,
+  contact,
+  sources,
+}) => {
   return (
-    <footer className="w-full bg-gradient-to-r from-orange-50 via-rose-50 to-fuchsia-100 font-sans text-black">
-      {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto py-10 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y-2 md:divide-y-0 md:divide-x-2 divide-black">
-
-          {/* Column 1: THÔNG TIN VỀ DỰ ÁN */}
-          <div className="flex flex-col items-center md:items-center px-6">
-            <h3 className="text-xl font-bold mb-6 uppercase inline-block border-b-2 border-black pb-1">
-              Thông tin về dự án
+    <footer
+      className="w-full font-sans"
+      style={{
+        background: `rgb(var(--color-surface))`,
+        color: "rgb(var(--color-text))",
+      }}
+    >
+      <div className="max-w-7xl mx-auto py-6 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          {/* COLUMN 1 */}
+          <div className="flex flex-col items-center px-6">
+            <h3 className="text-xl font-bold mb-6 uppercase border-b-2 pb-1"
+              style={{ borderColor: "rgb(var(--color-border))" }}>
+              {projectInfo.title}
             </h3>
 
-            {/* Logo Placeholder */}
-            <div className="w-32 h-32 rounded-full border-2 border-blue-500 flex items-center justify-center bg-white mb-6 overflow-hidden">
-              <img
-                src="/assets/LogoTruong.png"
-                alt="Logo Trường THPT Chuyên Nguyễn Quang Diêu"
-                className="w-full h-full"
-              />
+            <div className="w-32 h-32 rounded-full flex items-center justify-center mb-6 overflow-hidden"
+              style={{
+                border: "2px solid rgb(var(--color-primary))",
+                backgroundColor: "rgb(var(--color-surface-elevated))",
+              }}>
+              <img src="/assets/LogoTruong.png" className="w-full h-full" />
             </div>
 
             <ul className="text-sm space-y-4 w-full">
               <li className="flex items-start gap-3">
-                <Users className="w-6 h-6 shrink-0 mt-1" />
+                <Users className="w-6 h-6 mt-1"
+                  style={{ color: "rgb(var(--color-primary))" }} />
                 <span className="font-semibold uppercase">
-                  Người thực hiện : Tập thể 10T1 THPT chuyên Nguyễn Quang Diêu
+                  {projectInfo.authorLabel}: {projectInfo.authorName}
                 </span>
-              </li>
-              <li className="flex items-start gap-3 pl-9">
-                <span className="w-1.5 h-1.5 rounded-full bg-black mt-2 shrink-0" />
-                <span className="uppercase font-semibold">( Câu khái quát )</span>
               </li>
             </ul>
           </div>
 
-          {/* Column 2: THÔNG TIN KHU DI TÍCH */}
-          <div className="flex flex-col items-center md:items-center px-6">
-            <h3 className="text-xl font-bold mb-6 uppercase inline-block border-b-2 border-black pb-1">
-              Thông tin khu di tích
+          {/* COLUMN 2 */}
+          <div className="flex flex-col items-center px-6">
+            <h3 className="text-xl font-bold mb-6 uppercase border-b-2 pb-1"
+              style={{ borderColor: "rgb(var(--color-border))" }}>
+              {heritageInfo.title}
             </h3>
 
-            {/* Image Placeholder */}
-            <div className="w-full border-2 border-blue-500 flex items-center justify-center bg-white mb-6 overflow-hidden">
-              <img
-                src="assets/khuditich.png"
-                className="w-full h-full object-contain"
-              />
+            <div className="w-full mb-6 overflow-hidden"
+              style={{
+                border: "2px solid rgb(var(--color-primary))",
+                backgroundColor: "rgb(var(--color-surface-elevated))",
+              }}>
+              <img src="assets/khuditich.png"
+                className="w-full h-full object-contain" />
             </div>
 
             <ul className="text-sm space-y-4 w-full max-w-[280px] font-semibold">
-              <li className="flex items-center gap-3 pl-2">
-                <span className="w-1.5 h-1.5 rounded-full border-2 border-black shrink-0" />
-                <span>OPEN / CLOSE</span>
-              </li>
               <li className="flex items-center gap-3">
-                <div className="bg-black text-white rounded-full p-1">
+                <div className="rounded-full p-1"
+                  style={{ border: "2px solid rgb(var(--color-border))" }}>
+                  <Globe className="w-5 h-5" />
                 </div>
-                <span>( LINK FACEBOOK )</span>
+                <a href="https://www.facebook.com/KDTNSS/" className="underline text-blue-400">
+                  {heritageInfo.facebookLabel}
+                </a>
               </li>
+
               <li className="flex items-center gap-3">
-                <Globe className="w-7 h-7 shrink-0 text-black" />
-                <span>( LINK WEB CỦA KHU DI TÍCH )</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="border-2 border-black rounded-full p-1">
-                  <Phone className="w-5 h-5 shrink-0" />
+                <div className="rounded-full p-1"
+                  style={{ border: "2px solid rgb(var(--color-border))" }}>
+                  <Phone className="w-5 h-5" />
                 </div>
-                <span>( SDT LIÊN HỆ QUẢN LÍ KHU DI TÍCH )</span>
+                <span>{heritageInfo.phone}</span>
+              </li>
+
+              <li className="flex items-center gap-3">
+                <div className="rounded-full p-1"
+                  style={{ border: "2px solid rgb(var(--color-border))" }}>
+                  <Mail className="w-5 h-5" />
+                </div>
+                <span>{heritageInfo.email}</span>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: LIÊN HỆ CHÚNG TÔI & NGUỒN THÔNG TIN */}
-          <div className="flex flex-col items-center md:items-center px-6">
-            <h3 className="text-xl font-bold mb-6 uppercase inline-block border-b-2 border-black pb-1">
-              Liên hệ chúng tôi
+          {/* COLUMN 3 */}
+          <div className="flex flex-col items-center px-6">
+            <h3 className="text-xl font-bold mb-6 uppercase border-b-2 pb-1"
+              style={{ borderColor: "rgb(var(--color-border))" }}>
+              {contact.title}
             </h3>
 
-            <ul className="text-sm space-y-5 w-full max-w-[220px] mb-12 font-semibold">
+            <ul className="text-sm space-y-5 w-full max-w-[220px] mb-10 font-semibold">
               <li className="flex items-center gap-3">
-                <div className="bg-black text-white rounded-full p-1">
+                <div className="rounded-full p-1"
+                  style={{ border: "2px solid rgb(var(--color-border))" }}>
+                  <Globe className="w-5 h-5" />
                 </div>
-                <span>( LINK FACEBOOK )</span>
+                <a href="https://www.facebook.com/profile.php?id=61580526609861"
+                  className="underline text-blue-400">
+                  {contact.facebookLabel}
+                </a>
               </li>
+
               <li className="flex items-center gap-3">
-                {/* Note: Music icon used as a placeholder for TikTok */}
-                <div className="bg-black text-white rounded-full p-1">
-                  <Music className="w-5 h-5 shrink-0" />
+                <div className="rounded-full p-1"
+                  style={{ border: "2px solid rgb(var(--color-border))" }}>
+                  <Music className="w-5 h-5" />
                 </div>
-                <span>( LINK TIKTOK )</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="border-2 border-black rounded-full p-1">
-                  <Mail className="w-5 h-5 shrink-0" />
-                </div>
-                <span>( MAIL )</span>
+                <a href="https://www.tiktok.com/@chuyentoan1khoa17nqd"
+                  className="underline text-blue-400">
+                  {contact.tiktokLabel}
+                </a>
               </li>
             </ul>
 
-            <h3 className="text-xl font-bold mb-2 uppercase inline-block border-b-2 border-black pb-1">
-              Nguồn thông tin
+            <h3 className="text-xl font-bold uppercase border-b-2 pb-1"
+              style={{ borderColor: "rgb(var(--color-border))" }}>
+              {sources.sourcesTitle}
             </h3>
+            <ul className="text-sm space-y-2 mt-4 w-full max-w-[220px] font-semibold">
+              {sources.data.map((value: string, index: number) => (
+                <li key={index} className="flex items-start gap-2">
+                  <span
+                    className="w-1.5 h-1.5 rounded-full mt-2"
+                    style={{ backgroundColor: "rgb(var(--color-primary))" }}
+                  />
+                  <span>{value}</span>
+                </li>
+              ))}
+            </ul>
           </div>
+
         </div>
       </div>
     </footer>

@@ -1,60 +1,39 @@
 import React from "react";
 import MemberDropdown from "./components/MemberDropdown";
 
-const members = [
-  {
-    image: "https://i.pravatar.cc/100?img=4",
-    name: "Đạt",
-    role: "Dev, Leader",
-  },
-  {
-    image: "https://i.pravatar.cc/100?img=9",
-    name: "Võ Hồ Thiên Hương",
-    role: "Designer, Leader design",
-  },
-  {
-    image: "https://i.pravatar.cc/100?img=61",
-    name: "Hà Bảo Khang",
-    role: "Dev",
-  },
-  {
-    image: "https://i.pravatar.cc/100?img=23",
-    name: "Nguyễn Tấn Phát",
-    role: "Dev",
-  },
-  {
-    image: "https://i.pravatar.cc/100?img=32",
-    name: "Bùi Phạm Khánh An",
-    role: "Designer",
-  },
-  {
-    image: "https://i.pravatar.cc/100?img=46",
-    name: "Phạm Nguyễn Đăng Khôi",
-    role: "Designer",
-  },
-  {
-    image: "https://i.pravatar.cc/100?img=64",
-    name: "Trần Hữu Thành",
-    role: "Designer",
-  },
-  {
-    image: "https://i.pravatar.cc/100?img=12",
-    name: "Mai Nguyễn Hải Bằng",
-    role: "Designer",
-  },
-  {
-    image: "https://i.pravatar.cc/100?img=6",
-    name: "Trần Phạm Anh Khoa",
-    role: "Designer",
-  },
-];
+export type Member = {
+  image: string;
+  name: string;
+  role: string;
+};
 
-const Section = () => {
+export type Team = {
+  title: string;
+  members: Member[];
+};
+
+export type SectionProps = {
+  title: string;
+  teams: Team[];
+};
+
+const Section: React.FC<SectionProps> = ({ teams, title }: SectionProps) => {
+  console.log(teams)
   return (
-    <div className="w-full p-2" style={{
+    <div
+      className="w-full p-2 space-y-4"
+      style={{
         backgroundColor: "rgb(var(--color-background))",
-      }}>
-      <MemberDropdown members={members} title="Team IT" />
+      }}
+    >
+      <h1 className="mb-6 text-3xl font-semibold text-[rgb(var(--color-text))]">{title}</h1>
+      {teams.map((team, index) => (
+        <MemberDropdown
+          key={index}
+          members={team.members}
+          title={team.title}
+        />
+      ))}
     </div>
   );
 };

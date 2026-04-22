@@ -1,3 +1,6 @@
+import { Section } from "@/components/navbar/types";
+import { Team } from "@/sections/MemberList/Section";
+
 export type HistoryItem = {
   year: number;
   title: string;
@@ -42,5 +45,81 @@ export type ContentSchema = {
     title: string;
     description: string;
     image: string;
+  };
+
+  gallery: {
+    title: string;
+    loadingText: string;
+
+    form: {
+      title: string;
+      authorPlaceholder: string;
+      titlePlaceholder: string;
+      descriptionPlaceholder: string;
+      submitText: string;
+
+      dropIdleText: string;
+      dropActiveText: string;
+      dropWithFileText: string;
+
+      errorTitleRequired: string;
+      errorFileRequired: string;
+    };
+
+    card: {
+      cta: string;
+    };
+  };
+
+  footer: {
+    projectInfo: {
+      title: string;
+      authorLabel: string;
+      authorName: string;
+    };
+
+    heritageInfo: {
+      title: string;
+      facebookLabel: string;
+      phone: string;
+      email: string;
+    };
+
+    contact: {
+      title: string;
+      facebookLabel: string;
+      tiktokLabel: string;
+    };
+
+    sources: {
+      sourcesTitle: string;
+      data: string[];
+    };
+  };
+  teamsSection: {
+    title: string;
+    teams: Team[];
+  };
+  headerSection: {
+    locationTag: string;
+    province: string;
+
+    badge: string;
+
+    titleTop: string;
+    titleMain: string;
+
+    subtitlePrefix: string;
+    subtitleHighlight: string;
+
+    location: string;
+    time: string;
+
+    exploreLabel: string;
+
+    backgroundImage: string;
+  };
+  navbar: {
+    sections: Section[];
   };
 };

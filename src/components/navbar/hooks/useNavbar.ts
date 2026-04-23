@@ -7,7 +7,7 @@ export function useNavbar(sections: Section[]) {
   const [activeSection, setActiveSection] = useState<string>(
     sections[0]?.id ?? "",
   );
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
   const [lang, setLang] = useState(getLangFromURL);
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -39,8 +39,8 @@ export function useNavbar(sections: Section[]) {
 
   // ── Theme ──────────────────────────────────────────────────────────────────
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", isDark);
     document.documentElement.classList.toggle("light", !isDark);
+    document.documentElement.classList.toggle("dark", isDark);
   }, [isDark]);
 
   // ── Actions ────────────────────────────────────────────────────────────────

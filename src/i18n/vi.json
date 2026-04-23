@@ -362,58 +362,57 @@
         "members": [
           {
             "name": "Đặng Nguyễn Khánh Băng",
-            "image": "https://i.pravatar.cc/100?img=11",
+            "image": "assets/MemberList/Science/dangnguyenkhanhbang.png",
             "role": ""
           },
           {
             "name": "Nguyễn Hữu Phúc Lợi",
-            "image": "https://i.pravatar.cc/100?img=12",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Lâm Thị Huỳnh Mai",
-            "image": "https://i.pravatar.cc/100?img=13",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Nguyễn Tấn Minh",
-            "image": "https://i.pravatar.cc/100?img=14",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Trần Phan Hà My",
-            "image": "https://i.pravatar.cc/100?img=15",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Phạm Gia Mỹ",
-            "image": "https://i.pravatar.cc/100?img=16",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Lê Minh Thông",
-            "image": "https://i.pravatar.cc/100?img=17",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
-
           {
             "name": "Trần Ái Nhi",
-            "image": "https://i.pravatar.cc/100?img=18",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Dương Anh Khoa",
-            "image": "https://i.pravatar.cc/100?img=19",
+            "image": "assets/MemberList/Science/duonganhkhoa.png",
             "role": ""
           },
           {
             "name": "Huỳnh Ngọc Minh Anh",
-            "image": "https://i.pravatar.cc/100?img=20",
+            "image": "assets/MemberList/Science/huynhngocminhanh.png",
             "role": ""
           },
           {
             "name": "Phạm Gia Khiêm",
-            "image": "https://i.pravatar.cc/100?img=21",
+            "image": "assets/MemberList/template.png",
             "role": ""
           }
         ]
@@ -423,27 +422,27 @@
         "members": [
           {
             "name": "Nguyễn Trần Tấn Khoa",
-            "image": "https://i.pravatar.cc/100?img=31",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Lê Thị Mai Anh",
-            "image": "https://i.pravatar.cc/100?img=32",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Lê Triệu Vỹ",
-            "image": "https://i.pravatar.cc/100?img=33",
+            "image": "assets/MemberList/Presentation/letrieuvy.png",
             "role": ""
           },
           {
             "name": "Trần Hồ Ngọc Trâm",
-            "image": "https://i.pravatar.cc/100?img=34",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Phạm Hồng Phương Anh",
-            "image": "https://i.pravatar.cc/100?img=35",
+            "image": "assets/MemberList/template.png",
             "role": ""
           }
         ]
@@ -453,47 +452,47 @@
         "members": [
           {
             "name": "Bùi Phạm Khánh An",
-            "image": "https://i.pravatar.cc/100?img=41",
+            "image": "assets/MemberList/IT/buiphamkhanhan.png",
             "role": ""
           },
           {
             "name": "Mai Nguyễn Hải Bằng",
-            "image": "https://i.pravatar.cc/100?img=42",
+            "image": "assets/MemberList/IT/mainguyenhaibang.png",
             "role": ""
           },
           {
             "name": "Lâm Tiến Đạt",
-            "image": "https://i.pravatar.cc/100?img=67",
+            "image": "assets/MemberList/IT/lamtiendat.png",
             "role": ""
           },
           {
             "name": "Võ Hồ Thiên Hương",
-            "image": "https://i.pravatar.cc/100?img=44",
+            "image": "assets/MemberList/IT/vohothienhuong.png",
             "role": ""
           },
           {
             "name": "Hà Bảo Khang",
-            "image": "https://i.pravatar.cc/100?img=45",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Trần Phạm Anh Khoa",
-            "image": "https://i.pravatar.cc/100?img=46",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Phạm Nguyễn Đăng Khôi",
-            "image": "https://i.pravatar.cc/100?img=47",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Nguyễn Tấn Phát",
-            "image": "https://i.pravatar.cc/100?img=48",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Trần Hữu Thành",
-            "image": "https://i.pravatar.cc/100?img=49",
+            "image": "assets/MemberList/template.png",
             "role": ""
           }
         ]
@@ -503,42 +502,42 @@
         "members": [
           {
             "name": "Lê Ngân Phi Anh",
-            "image": "https://i.pravatar.cc/100?img=51",
+            "image": "assets/MemberList/Media/lenganphianh.png",
             "role": ""
           },
           {
             "name": "Lê Nguyễn Quốc Anh",
-            "image": "https://i.pravatar.cc/100?img=52",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Nguyễn Tuấn Kiệt",
-            "image": "https://i.pravatar.cc/100?img=53",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Trần Thiên Kỳ",
-            "image": "https://i.pravatar.cc/100?img=54",
+            "image": "assets/MemberList/Media/tranthienky.png",
             "role": ""
           },
           {
             "name": "Văn Công Lợi",
-            "image": "https://i.pravatar.cc/100?img=55",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Phan Trọng Nhân",
-            "image": "https://i.pravatar.cc/100?img=56",
+            "image": "assets/MemberList/template.png",
             "role": ""
           },
           {
             "name": "Bùi Thanh Sơn",
-            "image": "https://i.pravatar.cc/100?img=57",
+            "image": "assets/MemberList/Media/buithanhson.png",
             "role": ""
           },
           {
             "name": "Ngô Phát Thịnh",
-            "image": "https://i.pravatar.cc/100?img=58",
+            "image": "assets/MemberList/template.png",
             "role": ""
           }
         ]

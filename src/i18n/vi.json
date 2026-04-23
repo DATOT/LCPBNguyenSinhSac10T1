@@ -494,6 +494,11 @@
             "name": "Trần Hữu Thành",
             "image": "assets/MemberList/template.png",
             "role": ""
+          },
+          {
+            "name": "Dương Hồng Phúc",
+            "image": "assets/MemberList/template.png",
+            "role": ""
           }
         ]
       },
@@ -537,6 +542,11 @@
           },
           {
             "name": "Ngô Phát Thịnh",
+            "image": "assets/MemberList/template.png",
+            "role": ""
+          },
+          {
+            "name": "Dương Thị Minh Nguyên",
             "image": "assets/MemberList/template.png",
             "role": ""
           }

@@ -17,7 +17,7 @@ const PdfTopbar: React.FC<Props> = ({
   onZoomOut
 }) => {
   return (
-    <div className="flex-shrink-0 flex items-center justify-between px-4 py-2 bg-white shadow">
+    <div className="flex-shrink-0 flex items-center justify-between px-4 py-2 bg-[rgb(var(--color-background))] shadow">
       <div className="flex items-center gap-2">
         <FileText size={18} />
         <span className="font-semibold">{title}</span>

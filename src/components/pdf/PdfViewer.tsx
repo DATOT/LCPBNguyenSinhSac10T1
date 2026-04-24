@@ -37,7 +37,7 @@ const PdfViewer: React.FC<PdfViewerProps> = ({ src, title = "Document" }) => {
   };
 
   return (
-    <div className="w-full h-screen flex bg-neutral-100">
+    <div className="w-full h-screen flex bg-[rgb(var(--color-background))]">
       
       <PdfSidebar
         src={src}
@@ -58,7 +58,7 @@ const PdfViewer: React.FC<PdfViewerProps> = ({ src, title = "Document" }) => {
 
         <div
           ref={containerRef}
-          className="flex-1 overflow-auto p-6 bg-neutral-200"
+          className="flex-1 overflow-auto p-6 bg-[rgb(var(--color-surface))]"
         >
           <Document file={src} onLoadSuccess={onLoadSuccess}>
             <PdfPages

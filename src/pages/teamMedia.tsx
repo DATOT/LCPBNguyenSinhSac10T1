@@ -59,8 +59,7 @@ const TeamMedia = () => {
         transition={{ delay: 0.3 }}
       >
         <h1
-          className="m-2 text-4xl md:text-4xl opacity-70"
-          style={{ color: "rgb(var(--color-text-muted))" }}
+          className="m-2 text-4xl md:text-4xl opacity-70 text-rose-500"
         >
           {"Media Team"}
         </h1>

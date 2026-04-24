@@ -37,8 +37,7 @@ const TeamIT = () => {
         transition={{ delay: 0.2 }}
       >
         <h1
-          className="mt-2 text-4xl md:text-4xl font-mono opacity-70"
-          style={{ color: "rgb(var(--color-text-muted))" }}
+          className="mt-2 text-4xl md:text-4xl font-mono opacity-70 text-sky-300/90"
         >
           {"< IT Team />"}
         </h1>

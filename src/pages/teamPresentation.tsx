@@ -49,12 +49,12 @@ const TeamPresentation = () => {
         transition={{ delay: 0.05 }}
         className="mb-10"
       >
-        <div className="flex items-center gap-3 mb-1">
+        {/*<div className="flex items-center gap-3 mb-1">
           <span className="text-yellow-400 text-xl select-none">🎤</span>
           <span className="text-xs font-mono tracking-[0.25em] uppercase text-yellow-400/70 border border-yellow-500/20 px-3 py-1 rounded-full bg-yellow-500/5">
             Public Speaking & Presentation
           </span>
-        </div>
+        </div>*/}
 
         <h1
           className="text-4xl md:text-5xl font-serif font-bold italic tracking-tight mt-3"

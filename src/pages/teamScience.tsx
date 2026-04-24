@@ -45,12 +45,12 @@ const TeamScience = () => {
     <div className="relative min-h-screen px-4 py-10 overflow-hidden">
       <TeamNavbar currentHref="/#/teamScience"/>
       {/* Science-themed ambient — cool emerald/teal/indigo */}
-      <div className="absolute inset-0 -z-10">
+      {/*<div className="absolute inset-0 -z-10">
         <div className="absolute w-[460px] h-[460px] bg-emerald-500/15 blur-[140px] top-0 left-1/2 -translate-x-1/2" />
         <div className="absolute w-[300px] h-[300px] bg-teal-400/10 blur-[110px] top-1/3 right-0" />
         <div className="absolute w-[280px] h-[280px] bg-indigo-500/10 blur-[120px] bottom-0 left-0" />
         {/* subtle grid overlay */}
-        <div
+        {/*<div
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
@@ -58,7 +58,7 @@ const TeamScience = () => {
             backgroundSize: "40px 40px",
           }}
         />
-      </div>
+      </div>*/}
 
       {/* Team heading — science-styled */}
       <motion.div
@@ -68,13 +68,13 @@ const TeamScience = () => {
         transition={{ delay: 0.05 }}
         className="mb-10"
       >
+        {/*
         <div className="flex items-center gap-3 mb-1">
-          {/* atom icon accent */}
           <span className="text-emerald-400 text-2xl select-none">⚛</span>
           <span className="text-xs font-mono tracking-[0.25em] uppercase text-emerald-400/70 border border-emerald-500/20 px-3 py-1 rounded-full bg-emerald-500/5">
             Research & Science
           </span>
-        </div>
+        </div>*/}
 
         <h1
           className="text-4xl md:text-5xl font-mono font-bold tracking-tighter mt-3"
@@ -124,7 +124,7 @@ const TeamScience = () => {
               className={`relative px-4 py-1.5 rounded-lg text-sm font-mono tracking-wide transition-all duration-300 border ${
                 activeTab === tab
                   ? "bg-emerald-500/15 border-emerald-400/30 text-emerald-300"
-                  : "bg-transparent border-black/5 text-black/90 hover:text-black/50 hover:border-black/10"
+                  : "bg-transparent border-[rgb(var(--color-text))]/5 text-[rgb(var(--color-text))]/90 hover:text-[rgb(var(--color-text))]/50 hover:border-[rgb(var(--color-text))]/10"
               }`}
             >
               {tab === "pdf" ? "📄 Report" : "🖼 Infographic"}

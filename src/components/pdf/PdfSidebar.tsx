@@ -15,7 +15,7 @@ const PdfSidebar: React.FC<Props> = ({
   onSelectPage
 }) => {
   return (
-    <div className="w-28 flex-shrink-0 overflow-y-auto bg-white border-r p-2 space-y-2">
+    <div className="w-28 flex-shrink-0 overflow-y-auto bg-[rgb(var(--color-background))] border-r p-2 space-y-2">
       {Array.from({ length: numPages }, (_, i) => (
         <div
           key={i}

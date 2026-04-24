@@ -1,5 +1,5 @@
 import React from "react";
-import MemberDropdown from "./components/MemberDropdown";
+import MemberLink from "./components/MemberLink";
 
 export type Member = {
   image: string;
@@ -7,10 +7,39 @@ export type Member = {
   role: string;
 };
 
-export type Team = {
-  title: string;
+export type TeamIT = {
+  teamName: string;
   members: Member[];
 };
+
+export type TeamMedia = {
+  teamName: string;
+  trailerSrc: string;
+  recapSrc: string;
+  posterSrc: string;
+  members: Member[];
+};
+
+export type TeamScience = {
+  teamName: string;
+  infoGraphicSrc: string;
+  reportSrc: string;
+  informationPostSrc: string;
+  members: Member[];
+};
+
+export type TeamPresentation = {
+  teamName: string;
+  infoGraphicSrc: string;
+  reportSrc: string;
+  informationPostSrc: string;
+  members: Member[];
+};
+
+export type Team = {
+  title: string;
+  href: string;
+}
 
 export type SectionProps = {
   title: string;
@@ -28,9 +57,9 @@ const Section: React.FC<SectionProps> = ({ teams, title }: SectionProps) => {
     >
       <h1 className="mb-6 text-3xl font-semibold text-[rgb(var(--color-text))]">{title}</h1>
       {teams.map((team, index) => (
-        <MemberDropdown
+        <MemberLink
           key={index}
-          members={team.members}
+          href={team.href}
           title={team.title}
         />
       ))}

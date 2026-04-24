@@ -1,5 +1,5 @@
 import { Section } from "@/components/navbar/types";
-import { Team } from "@/sections/MemberList/Section";
+import { Member, Team } from "@/sections/MemberList/Section";
 
 export type HistoryItem = {
   year: number;
@@ -122,4 +122,29 @@ export type ContentSchema = {
   navbar: {
     sections: Section[];
   };
+  teamIT: {
+    title: string;
+    productInfo: string;
+    members: Member[];
+  };
+  teamMedia: {
+    title: string;
+    posterSrc: string;
+    recapSrc: string;
+    trailerSrc: string;
+    members: Member[];
+  };
+  teamScience: {
+    title: string;
+    infographicSrc: string;
+    docSrc: string;
+    members: Member[];
+  };
+  teamPresentation: {
+    title: string;
+    members: Member[];
+    aboutVideoSrc: string;
+  };
+  productText: string;
+  memberText: string;
 };

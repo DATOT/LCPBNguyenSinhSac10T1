@@ -4,7 +4,7 @@ import GalleryModal from "./components/GalleryModal";
 import PostForm from "./components/PostForm";
 
 import { GalleryItem, SectionProps } from "./types";
-import { fetchPosts, createPost } from "../lib/api";
+import { fetchPosts, createPost } from "../../lib/api";
 
 export default function Section({ config }: { config: SectionProps }) {
   const [posts, setPosts] = useState<GalleryItem[]>([]);

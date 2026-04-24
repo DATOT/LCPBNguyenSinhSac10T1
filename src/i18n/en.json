@@ -122,15 +122,40 @@
   },
 
   "mapSection": {
-    "title": "Site Map",
-    "hint": "Try clicking or hovering over areas",
+    "title": "Site Map of the Historical Complex",
+    "hint": "Try clicking or hovering over the areas",
     "mapInfo": {
       "NghiMon": {
         "title": "Main Gate",
         "shortDescription": "The main entrance to the site.",
-        "fullDescription": "The main entrance marking the sacred and historical space.",
+        "fullDescription": "The main entrance to the site, symbolizing solemnity and marking the boundary of the spiritual and historical space.",
         "image": "assets/Map/area/nghimon.jpg",
         "showFull": true,
+        "color": "#ec1922"
+      },
+      "Cong1": {
+        "title": "Gate 1",
+        "shortDescription": "",
+        "color": "#ec1922"
+      },
+      "Cong2": {
+        "title": "Gate 2",
+        "shortDescription": "",
+        "color": "#ec1922"
+      },
+      "Cong3": {
+        "title": "Gate 3",
+        "shortDescription": "",
+        "color": "#ec1922"
+      },
+      "Cong4": {
+        "title": "Gate 4",
+        "shortDescription": "",
+        "color": "#ec1922"
+      },
+      "Cong5": {
+        "title": "Gate 5",
+        "shortDescription": "",
         "color": "#ec1922"
       },
       "BaiDoXe": {
@@ -138,29 +163,145 @@
         "shortDescription": "",
         "color": "#f78d54"
       },
+      "Nhakho": {
+        "title": "Storage House",
+        "shortDescription": "",
+        "color": "#f78d54"
+      },
+      "NhaTrungBayDieuKhac": {
+        "title": "Sculpture Exhibition House",
+        "shortDescription": "Displays sculpture artworks.",
+        "fullDescription": "Displays sculpture artworks with artistic and historical value related to the site.",
+        "image": "",
+        "showFull": true,
+        "color": "#f16521"
+      },
+      "NhaTrungBayHoChiMinh": {
+        "title": "Ho Chi Minh Exhibition House",
+        "shortDescription": "Displays materials about President Ho Chi Minh.",
+        "fullDescription": "Displays documents and images about President Ho Chi Minh and his connection to his father.",
+        "image": "",
+        "showFull": true,
+        "color": "#ec038b"
+      },
       "NhaSanBacHo": {
         "title": "Ho Chi Minh Stilt House",
-        "shortDescription": "Replica of his living space.",
-        "fullDescription": "A 1:1 replica recreating Ho Chi Minh’s simple lifestyle.",
+        "shortDescription": "A reconstruction of Ho Chi Minh’s living space.",
+        "fullDescription": "A 1:1 scale model recreating Ho Chi Minh’s simple, nature-oriented living space.",
         "image": "assets/Map/area/nhasanbacho.jpg",
         "showFull": true,
         "color": "#ec038b"
       },
       "NhaBatDan": {
         "title": "Bat Dan House",
-        "shortDescription": "Traditional 8-pillar house.",
-        "fullDescription": "A traditional Southern house with 8 pillars, designed for ventilation.",
+        "shortDescription": "Traditional Southern Vietnamese house with 8 pillars.",
+        "fullDescription": "A traditional Southern Vietnamese house with an 8-pillar structure, designed for ventilation and climate adaptation.",
         "image": "assets/Map/area/nhabatdan.jpg",
         "showFull": true,
         "color": "#0200fc"
       },
+      "NhaChuDinh": {
+        "title": "Dinh-shaped House",
+        "shortDescription": "Traditional house shaped like the Chinese character “Đinh”.",
+        "fullDescription": "A traditional house with a “Đinh” (丁) layout, reflecting family life and culture in Southern Vietnam.",
+        "image": "assets/Map/area/nhachudinh.jpg",
+        "showFull": true,
+        "color": "#642d8f"
+      },
+      "NhaNocNgua": {
+        "title": "Noc Ngua House",
+        "shortDescription": "House with a central load-bearing column structure.",
+        "fullDescription": "A house with a unique structural system using central load-bearing columns, creating a spacious and airy interior.",
+        "image": "assets/Map/area/nhanocngua.jpg",
+        "showFull": true,
+        "color": "#91258d"
+      },
+      "NhaMat": {
+        "title": "Rest House",
+        "shortDescription": "",
+        "color": "#fe00fc"
+      },
+      "NhaTrenCoc": {
+        "title": "House on Stilts",
+        "shortDescription": "Stilt house designed to prevent flooding.",
+        "fullDescription": "A house built on stilts, suitable for flood-prone conditions, showing adaptation to nature.",
+        "image": "assets/Map/area/nhatrencoc.jfif",
+        "showFull": true,
+        "color": "#01fdfd"
+      },
+      "WC": {
+        "title": "Restroom",
+        "shortDescription": "",
+        "color": "#2e2f93"
+      },
+      "QuanLyKhuDiTich": {
+        "title": "Site Management Office",
+        "shortDescription": "",
+        "color": "#fdf100"
+      },
+      "NhaTrungBayNguyenSinhSac": {
+        "title": "Nguyen Sinh Sac Exhibition House",
+        "shortDescription": "Displays materials about Nguyen Sinh Sac.",
+        "fullDescription": "Displays documents and artifacts about the life and career of scholar Nguyen Sinh Sac.",
+        "image": "assets/Map/area/nhatrungbaynguyensinhsac.jpg",
+        "showFull": true,
+        "color": "#ad782c"
+      },
+      "VomMoCuSac": {
+        "title": "Nguyen Sinh Sac Mausoleum Dome",
+        "shortDescription": "Lotus-shaped structure.",
+        "fullDescription": "A lotus-shaped structure with 9 dragon heads, symbolizing protection and reverence.",
+        "image": "assets/Map/area/vommocusac.jpg",
+        "showFull": true,
+        "color": "#ad782c"
+      },
+      "NhaCuSac": {
+        "title": "Nguyen Sinh Sac House",
+        "shortDescription": "Recreation of his living space.",
+        "fullDescription": "A reconstructed space where he lived, treated patients, and taught while in Cao Lanh.",
+        "image": "assets/Map/area/nhacusac.jpg",
+        "showFull": true,
+        "color": "#ad782c"
+      },
       "DenThoCuSac": {
         "title": "Nguyen Sinh Sac Temple",
-        "shortDescription": "A place of worship.",
-        "fullDescription": "A solemn temple with traditional architecture and intricate carvings.",
+        "shortDescription": "A solemn worship structure.",
+        "fullDescription": "A solemn worship structure with traditional architecture and intricate carvings.",
         "image": "assets/Map/area/denthocusac.jfif",
         "showFull": true,
         "color": "#ad782c"
+      },
+      "TuongCuNguyenSinhSac": {
+        "title": "Statue of Nguyen Sinh Sac",
+        "shortDescription": "Memorial statue of Nguyen Sinh Sac.",
+        "fullDescription": "A memorial statue expressing respect for him as a patriotic scholar devoted to the people.",
+        "image": "assets/Map/area/tuongnguyensinhsac.jpg",
+        "showFull": true,
+        "color": "#ad782c"
+      },
+      "NhaOngCaNhiNguu": {
+        "title": "Mr. Ca Nhi Nguu's House",
+        "shortDescription": "The house where he once stayed in Cao Lanh.",
+        "fullDescription": "The house where he lived when he first arrived in Cao Lanh, reflecting Southern Vietnamese family culture.",
+        "image": "",
+        "showFull": true,
+        "color": "#5f3815"
+      },
+      "LoRen": {
+        "title": "Blacksmith Workshop",
+        "shortDescription": "A recreation of traditional blacksmithing.",
+        "fullDescription": "A space recreating the traditional blacksmithing craft of Hoa An village in the past.",
+        "image": "",
+        "showFull": true,
+        "color": "#5f3815"
+      },
+      "NhaOngNamGiao": {
+        "title": "Mr. Nam Giao's House",
+        "shortDescription": "The house where he lived and passed away.",
+        "fullDescription": "A simple house where he lived, treated patients, and eventually passed away.",
+        "image": "assets/Map/area/nhaongnamgiao.jpg",
+        "showFull": true,
+        "color": "#5f3815"
       }
     }
   },
@@ -221,37 +362,6 @@
       "data": []
     }
   },
-
-  "teamsSection": {
-    "title": "Team Members",
-    "teams": [
-      {
-        "title": "IT Team",
-        "members": [
-          {
-            "image": "https://i.pravatar.cc/100?img=4",
-            "name": "Dat",
-            "role": "Developer, Leader"
-          },
-          {
-            "image": "https://i.pravatar.cc/100?img=61",
-            "name": "Ha Bao Khang",
-            "role": "Developer"
-          }
-        ]
-      },
-      {
-        "title": "Design Team",
-        "members": [
-          {
-            "image": "https://i.pravatar.cc/100?img=32",
-            "name": "Bui Pham Khanh An",
-            "role": "Designer"
-          }
-        ]
-      }
-    ]
-  },
   "headerSection": {
     "locationTag": "Cao Lanh City",
     "province": "Dong Thap",
@@ -282,5 +392,231 @@
       { "id": "gallery", "label": "Gallery" },
       { "id": "members", "label": "Members" }
     ]
-  }
+  },
+  "teamsSection": {
+    "title": "Nhóm và sản phẩm",
+    "teams": [
+      {
+        "title": "Team Science",
+        "href": "/#/teamScience"
+      },
+      {
+        "title": "Team Presentation",
+        "href": "/#/teamPresentation"
+      },
+      {
+        "title": "Team IT",
+        "href": "/#/teamIT"
+      },
+      {
+        "title": "Team Media",
+        "href": "/#/teamMedia"
+      }
+    ]
+  },
+
+  "teamIT": {
+    "title": "Team IT",
+    "productInfo": "Website has intended features and cool animations:)",
+    "members": [
+      {
+        "name": "Bùi Phạm Khánh An",
+        "image": "assets/MemberList/IT/buiphamkhanhan.png",
+        "role": ""
+      },
+      {
+        "name": "Mai Nguyễn Hải Bằng",
+        "image": "assets/MemberList/IT/mainguyenhaibang.png",
+        "role": ""
+      },
+      {
+        "name": "Lâm Tiến Đạt",
+        "image": "assets/MemberList/IT/lamtiendat.png",
+        "role": ""
+      },
+      {
+        "name": "Võ Hồ Thiên Hương",
+        "image": "assets/MemberList/IT/vohothienhuong.png",
+        "role": ""
+      },
+      {
+        "name": "Hà Bảo Khang",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Phạm Anh Khoa",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Phạm Nguyễn Đăng Khôi",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Nguyễn Tấn Phát",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Hữu Thành",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Dương Hồng Phúc",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      }
+    ]
+  },
+  "teamMedia": {
+    "title": "Team Media",
+    "posterSrc": "assets/TeamMedia/poster.png",
+    "recapSrc": "assets/TeamMedia/placeholder_video.mp4",
+    "trailerSrc": "assets/TeamMedia/placeholder_video.mp4",
+    "members": [
+      {
+        "name": "Lê Ngân Phi Anh",
+        "image": "assets/MemberList/Media/lenganphianh.png",
+        "role": ""
+      },
+      {
+        "name": "Lê Nguyễn Quốc Anh",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Nguyễn Tuấn Kiệt",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Thiên Kỳ",
+        "image": "assets/MemberList/Media/tranthienky.png",
+        "role": ""
+      },
+      {
+        "name": "Văn Công Lợi",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Phan Trọng Nhân",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Bùi Thanh Sơn",
+        "image": "assets/MemberList/Media/buithanhson.png",
+        "role": ""
+      },
+      {
+        "name": "Ngô Phát Thịnh",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Dương Thị Minh Nguyên",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      }
+    ]
+  },
+  "teamScience": {
+    "title": "Team Science",
+    "infographicSrc": "assets/TeamScience/placeholder.jpg",
+    "docSrc": "assets/TeamScience/document.pdf",
+    "members": [
+      {
+        "name": "Đặng Nguyễn Khánh Băng",
+        "image": "assets/MemberList/Science/dangnguyenkhanhbang.png",
+        "role": ""
+      },
+      {
+        "name": "Nguyễn Hữu Phúc Lợi",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Lâm Thị Huỳnh Mai",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Nguyễn Tấn Minh",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Phan Hà My",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Phạm Gia Mỹ",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Lê Minh Thông",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Ái Nhi",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Dương Anh Khoa",
+        "image": "assets/MemberList/Science/duonganhkhoa.png",
+        "role": ""
+      },
+      {
+        "name": "Huỳnh Ngọc Minh Anh",
+        "image": "assets/MemberList/Science/huynhngocminhanh.png",
+        "role": ""
+      },
+      {
+        "name": "Phạm Gia Khiêm",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      }
+    ]
+  },
+  "teamPresentation": {
+    "title": "Team Presentation",
+    "aboutVideoSrc": "assets/TeamPresentation/placeholder_video.mp4",
+    "members": [
+      {
+        "name": "Nguyễn Trần Tấn Khoa",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Lê Thị Mai Anh",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Lê Triệu Vỹ",
+        "image": "assets/MemberList/Presentation/letrieuvy.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Hồ Ngọc Trâm",
+        "image": "assets/MemberList/Presentation/tranhongoctram.jpg",
+        "role": ""
+      },
+      {
+        "name": "Phạm Hồng Phương Anh",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      }
+    ]
+  },
+  "productText": "Product",
+  "memberText": "Members"
 }

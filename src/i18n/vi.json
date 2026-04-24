@@ -355,202 +355,23 @@
     "sources": { "sourcesTitle": "Nguồn thông tin", "data": [] }
   },
   "teamsSection": {
-    "title": "Danh sách thành viên",
+    "title": "Nhóm và sản phẩm",
     "teams": [
       {
         "title": "Team Science",
-        "members": [
-          {
-            "name": "Đặng Nguyễn Khánh Băng",
-            "image": "assets/MemberList/Science/dangnguyenkhanhbang.png",
-            "role": ""
-          },
-          {
-            "name": "Nguyễn Hữu Phúc Lợi",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Lâm Thị Huỳnh Mai",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Nguyễn Tấn Minh",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Trần Phan Hà My",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Phạm Gia Mỹ",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Lê Minh Thông",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Trần Ái Nhi",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Dương Anh Khoa",
-            "image": "assets/MemberList/Science/duonganhkhoa.png",
-            "role": ""
-          },
-          {
-            "name": "Huỳnh Ngọc Minh Anh",
-            "image": "assets/MemberList/Science/huynhngocminhanh.png",
-            "role": ""
-          },
-          {
-            "name": "Phạm Gia Khiêm",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          }
-        ]
+        "href": "/#/teamScience"
       },
       {
         "title": "Team Presentation",
-        "members": [
-          {
-            "name": "Nguyễn Trần Tấn Khoa",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Lê Thị Mai Anh",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Lê Triệu Vỹ",
-            "image": "assets/MemberList/Presentation/letrieuvy.png",
-            "role": ""
-          },
-          {
-            "name": "Trần Hồ Ngọc Trâm",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Phạm Hồng Phương Anh",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          }
-        ]
+        "href": "/#/teamPresentation"
       },
       {
         "title": "Team IT",
-        "members": [
-          {
-            "name": "Bùi Phạm Khánh An",
-            "image": "assets/MemberList/IT/buiphamkhanhan.png",
-            "role": ""
-          },
-          {
-            "name": "Mai Nguyễn Hải Bằng",
-            "image": "assets/MemberList/IT/mainguyenhaibang.png",
-            "role": ""
-          },
-          {
-            "name": "Lâm Tiến Đạt",
-            "image": "assets/MemberList/IT/lamtiendat.png",
-            "role": ""
-          },
-          {
-            "name": "Võ Hồ Thiên Hương",
-            "image": "assets/MemberList/IT/vohothienhuong.png",
-            "role": ""
-          },
-          {
-            "name": "Hà Bảo Khang",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Trần Phạm Anh Khoa",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Phạm Nguyễn Đăng Khôi",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Nguyễn Tấn Phát",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Trần Hữu Thành",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Dương Hồng Phúc",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          }
-        ]
+        "href": "/#/teamIT"
       },
       {
         "title": "Team Media",
-        "members": [
-          {
-            "name": "Lê Ngân Phi Anh",
-            "image": "assets/MemberList/Media/lenganphianh.png",
-            "role": ""
-          },
-          {
-            "name": "Lê Nguyễn Quốc Anh",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Nguyễn Tuấn Kiệt",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Trần Thiên Kỳ",
-            "image": "assets/MemberList/Media/tranthienky.png",
-            "role": ""
-          },
-          {
-            "name": "Văn Công Lợi",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Phan Trọng Nhân",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Bùi Thanh Sơn",
-            "image": "assets/MemberList/Media/buithanhson.png",
-            "role": ""
-          },
-          {
-            "name": "Ngô Phát Thịnh",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          },
-          {
-            "name": "Dương Thị Minh Nguyên",
-            "image": "assets/MemberList/template.png",
-            "role": ""
-          }
-        ]
+        "href": "/#/teamMedia"
       }
     ]
   },
@@ -585,5 +406,210 @@
       { "id": "gallery", "label": "Thư viện ảnh" },
       { "id": "members", "label": "Thành viên" }
     ]
-  }
+  },
+
+  "teamIT": {
+    "title": "Team IT",
+    "productInfo": "Website có các tính năng như dự kiến ban đầu và animation nhìn thú vị:)",
+    "members": [
+      {
+        "name": "Bùi Phạm Khánh An",
+        "image": "assets/MemberList/IT/buiphamkhanhan.png",
+        "role": ""
+      },
+      {
+        "name": "Mai Nguyễn Hải Bằng",
+        "image": "assets/MemberList/IT/mainguyenhaibang.png",
+        "role": ""
+      },
+      {
+        "name": "Lâm Tiến Đạt",
+        "image": "assets/MemberList/IT/lamtiendat.png",
+        "role": ""
+      },
+      {
+        "name": "Võ Hồ Thiên Hương",
+        "image": "assets/MemberList/IT/vohothienhuong.png",
+        "role": ""
+      },
+      {
+        "name": "Hà Bảo Khang",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Phạm Anh Khoa",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Phạm Nguyễn Đăng Khôi",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Nguyễn Tấn Phát",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Hữu Thành",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Dương Hồng Phúc",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      }
+    ]
+  },
+  "teamMedia": {
+    "title": "Team Media",
+    "posterSrc": "assets/TeamMedia/poster.png",
+    "recapSrc": "assets/TeamMedia/placeholder_video.mp4",
+    "trailerSrc": "assets/TeamMedia/placeholder_video.mp4",
+    "members": [
+      {
+        "name": "Lê Ngân Phi Anh",
+        "image": "assets/MemberList/Media/lenganphianh.png",
+        "role": ""
+      },
+      {
+        "name": "Lê Nguyễn Quốc Anh",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Nguyễn Tuấn Kiệt",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Thiên Kỳ",
+        "image": "assets/MemberList/Media/tranthienky.png",
+        "role": ""
+      },
+      {
+        "name": "Văn Công Lợi",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Phan Trọng Nhân",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Bùi Thanh Sơn",
+        "image": "assets/MemberList/Media/buithanhson.png",
+        "role": ""
+      },
+      {
+        "name": "Ngô Phát Thịnh",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Dương Thị Minh Nguyên",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      }
+    ]
+  },
+  "teamScience": {
+    "title": "Team Science",
+    "infographicSrc": "assets/TeamScience/placeholder.jpg",
+    "docSrc": "assets/TeamScience/document.pdf",
+    "members": [
+      {
+        "name": "Đặng Nguyễn Khánh Băng",
+        "image": "assets/MemberList/Science/dangnguyenkhanhbang.png",
+        "role": ""
+      },
+      {
+        "name": "Nguyễn Hữu Phúc Lợi",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Lâm Thị Huỳnh Mai",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Nguyễn Tấn Minh",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Phan Hà My",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Phạm Gia Mỹ",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Lê Minh Thông",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Ái Nhi",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Dương Anh Khoa",
+        "image": "assets/MemberList/Science/duonganhkhoa.png",
+        "role": ""
+      },
+      {
+        "name": "Huỳnh Ngọc Minh Anh",
+        "image": "assets/MemberList/Science/huynhngocminhanh.png",
+        "role": ""
+      },
+      {
+        "name": "Phạm Gia Khiêm",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      }
+    ]
+  },
+  "teamPresentation": {
+    "title": "Team Presentation",
+    "aboutVideoSrc": "assets/TeamPresentation/placeholder_video.mp4",
+    "members": [
+      {
+        "name": "Nguyễn Trần Tấn Khoa",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Lê Thị Mai Anh",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      },
+      {
+        "name": "Lê Triệu Vỹ",
+        "image": "assets/MemberList/Presentation/letrieuvy.png",
+        "role": ""
+      },
+      {
+        "name": "Trần Hồ Ngọc Trâm",
+        "image": "assets/MemberList/Presentation/tranhongoctram.jpg",
+        "role": ""
+      },
+      {
+        "name": "Phạm Hồng Phương Anh",
+        "image": "assets/MemberList/template.png",
+        "role": ""
+      }
+    ]
+  },
+  "productText": "Sản Phẩm",
+  "memberText": "Thành Viên"
 }

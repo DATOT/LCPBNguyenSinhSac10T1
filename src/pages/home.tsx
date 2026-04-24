@@ -20,7 +20,7 @@ function Homepage() {
 
   return (
     <div
-      className="flex flex-col gap-1"
+      className="flex flex-col gap-2"
       style={{ backgroundColor: "rgb(var(--color-blue-dark))" }}
     >
       <Navbar sections={content.navbar.sections} />

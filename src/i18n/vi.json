@@ -352,7 +352,21 @@
       "facebookLabel": "Facebook",
       "tiktokLabel": "Tiktok"
     },
-    "sources": { "sourcesTitle": "Nguồn thông tin", "data": [] }
+    "sources": {
+      "sourcesTitle": "Nguồn thông tin",
+      "data": [
+        "nhandan.vn",
+        "dsvh.gov.vn",
+        "dulich.dongthap.gov.vn",
+        "laodong.vn",
+        "dantri.com.vn",
+        "baotuyenquang.com.vn",
+        "diendandoanhnghiep.vn",
+        "vovworld.vn",
+        "baovinhlong.com.vn",
+        "tuoitre.vn"
+      ]
+    }
   },
   "teamsSection": {
     "title": "Nhóm và sản phẩm",

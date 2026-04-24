@@ -526,7 +526,7 @@
   },
   "teamScience": {
     "title": "Team Science",
-    "infographicSrc": "assets/TeamScience/placeholder.jpg",
+    "infographicSrc": "assets/TeamScience/infographic.png",
     "docSrc": "assets/TeamScience/document.pdf",
     "members": [
       {

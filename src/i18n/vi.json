@@ -59,7 +59,6 @@
       }
     ]
   },
-
   "historyOfSite": {
     "title": "Sự hình thành và phát triển của khu di tích",
     "data": [
@@ -317,7 +316,6 @@
   "gallery": {
     "title": "Thư viện ảnh",
     "loadingText": "Đang load posts",
-
     "form": {
       "title": "Để lại ấn tượng bằng một bài post",
       "authorPlaceholder": "Tên của bạn(bỏ trống nếu Ẩn Danh)",
@@ -330,7 +328,6 @@
       "errorTitleRequired": "Thiếu tiêu đề",
       "errorFileRequired": "Thiếu ảnh"
     },
-
     "card": {
       "cta": "Ấn để tìm hiểu thêm→"
     }
@@ -392,36 +389,52 @@
   "headerSection": {
     "locationTag": "Thành phố Cao Lãnh",
     "province": "Đồng Tháp",
-
     "badge": "Khu Di Tích Lịch Sử",
-
     "titleTop": "Di Tích Quốc Gia",
     "titleMain": "Nguyễn Sinh Sắc",
-
     "subtitlePrefix": "Hồn Thiêng",
     "subtitleHighlight": "Đất Cổ.",
-
     "location": "Phường 4, TP. Cao Lãnh",
     "time": "07:00 - 17:00",
-
     "exploreLabel": "Khám phá",
-
     "backgroundImage": "https://bcp.cdnchinhphu.vn/334894974524682240/2023/8/13/img2737-16919037726071551096263.jpg"
   },
-
   "navbar": {
     "sections": [
-      { "id": "header", "label": "Trang đầu" },
-      { "id": "about-place", "label": "Giới thiệu di tích" },
-      { "id": "about-person", "label": "Nguyễn Sinh Sắc" },
-      { "id": "biography", "label": "Tiểu sử" },
-      { "id": "history", "label": "Lịch sử" },
-      { "id": "map", "label": "Bản đồ" },
-      { "id": "gallery", "label": "Thư viện ảnh" },
-      { "id": "members", "label": "Thành viên" }
+      {
+        "id": "header",
+        "label": "Trang đầu"
+      },
+      {
+        "id": "about-place",
+        "label": "Giới thiệu di tích"
+      },
+      {
+        "id": "about-person",
+        "label": "Nguyễn Sinh Sắc"
+      },
+      {
+        "id": "biography",
+        "label": "Tiểu sử"
+      },
+      {
+        "id": "history",
+        "label": "Lịch sử"
+      },
+      {
+        "id": "map",
+        "label": "Bản đồ"
+      },
+      {
+        "id": "gallery",
+        "label": "Thư viện ảnh"
+      },
+      {
+        "id": "members",
+        "label": "Thành viên"
+      }
     ]
   },
-
   "teamIT": {
     "title": "Team IT",
     "productInfo": "Website có các tính năng như dự kiến ban đầu và animation nhìn thú vị:)",
@@ -473,7 +486,7 @@
       },
       {
         "name": "Dương Hồng Phúc",
-        "image": "assets/MemberList/template.png",
+        "image": "assets/MemberList/IT/duonghongphuc.jpg",
         "role": ""
       }
     ]
@@ -511,7 +524,7 @@
       },
       {
         "name": "Phan Trọng Nhân",
-        "image": "assets/MemberList/template.png",
+        "image": "assets/MemberList/Media/phantrongnhan.jpg",
         "role": ""
       },
       {
@@ -558,7 +571,7 @@
       },
       {
         "name": "Trần Phan Hà My",
-        "image": "assets/MemberList/template.png",
+        "image": "assets/MemberList/Science/tranphanhamy.jpg",
         "role": ""
       },
       {

@@ -546,7 +546,7 @@
   },
   "teamScience": {
     "title": "Team Science",
-    "infographicSrc": "assets/TeamScience/infographic.png",
+    "infographicSrc": "assets/TeamScience/infographic.jpg",
     "docSrc": "assets/TeamScience/document.pdf",
     "members": [
       {
@@ -608,7 +608,7 @@
   },
   "teamPresentation": {
     "title": "Team Presentation",
-    "aboutVideoSrc": "assets/TeamPresentation/placeholder_video.mp4",
+    "aboutVideoSrc": "https://drive.google.com/file/d/1bUhw9LEEh3VWKi2pHEHdYm0D8w4zITuu/view",
     "members": [
       {
         "name": "Nguyễn Trần Tấn Khoa",

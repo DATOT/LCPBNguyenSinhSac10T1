@@ -90,8 +90,8 @@ const TeamPresentation = () => {
         className="my-12"
       >
         <a href={content.teamPresentation.aboutVideoSrc} className="flex items-center gap-3 mb-5">
-          <span className="text-xs font-mono tracking-[0.2em] uppercase text-violet-400/80 border border-violet-400/20 px-3 py-1 rounded-full bg-violet-500/5">
-            ▶ About
+          <span className="font-mono tracking-[0.2em] uppercase text-violet-400/80 border border-violet-400/20 px-3 py-1 rounded-full bg-violet-500/5">
+            ▶ Watch About Video Here
           </span>
         </a>
 
@@ -104,49 +104,6 @@ const TeamPresentation = () => {
             }}
           />
 
-          <div className="relative w-full h-[85vh] md:h-[90vh] rounded-2xl overflow-hidden border border-white/5 shadow-2xl bg-black">
-
-            {playing ? (
-              <a
-                href={content.teamPresentation.aboutVideoSrc}
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <div
-                className="w-full h-full flex flex-col items-center justify-center cursor-pointer group relative"
-                onClick={() => setPlaying(true)}
-              >
-                {/* cinematic gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-black/70" />
-
-                {/* center content */}
-                <motion.div
-                  whileHover={{ scale: 1.08 }}
-                  whileTap={{ scale: 0.96 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className="relative z-10 flex flex-col items-center gap-5"
-                >
-                  {/* glowing play button */}
-                  <div className="relative">
-                    <div className="absolute inset-0 rounded-full bg-yellow-400/20 blur-2xl scale-150" />
-                    <div className="relative w-24 h-24 rounded-full bg-gradient-to-br from-yellow-400 to-violet-500 flex items-center justify-center shadow-2xl shadow-yellow-500/30">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        className="w-10 h-10 text-black ml-1"
-                      >
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-
-                  <span className="text-sm md:text-base font-mono tracking-widest uppercase text-white/60 group-hover:text-white transition-colors">
-                    Watch About Video
-                  </span>
-                </motion.div>
-              </div>
-            )}
-          </div>
         </a>
       </motion.div >
 

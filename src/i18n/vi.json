@@ -369,19 +369,19 @@
     "title": "Nhóm và sản phẩm",
     "teams": [
       {
-        "title": "Team Science",
+        "title": "Science Team",
         "href": "/#/teamScience"
       },
       {
-        "title": "Team Presentation",
+        "title": "Presentation Team",
         "href": "/#/teamPresentation"
       },
       {
-        "title": "Team IT",
+        "title": "IT Team",
         "href": "/#/teamIT"
       },
       {
-        "title": "Team Media",
+        "title": "Media Team",
         "href": "/#/teamMedia"
       }
     ]
@@ -436,7 +436,7 @@
     ]
   },
   "teamIT": {
-    "title": "Team IT",
+    "title": "IT Team",
     "productInfo": "Website có các tính năng như dự kiến ban đầu và animation nhìn thú vị:)",
     "members": [
       {
@@ -492,7 +492,7 @@
     ]
   },
   "teamMedia": {
-    "title": "Team Media",
+    "title": "Media Team",
     "posterSrc": "assets/TeamMedia/poster.png",
     "recapSrc": "assets/TeamMedia/placeholder_video.mp4",
     "trailerSrc": "assets/TeamMedia/placeholder_video.mp4",
@@ -545,7 +545,7 @@
     ]
   },
   "teamScience": {
-    "title": "Team Science",
+    "title": "Science Team",
     "infographicSrc": "assets/TeamScience/infographic.jpg",
     "docSrc": "assets/TeamScience/document.pdf",
     "members": [
@@ -607,7 +607,7 @@
     ]
   },
   "teamPresentation": {
-    "title": "Team Presentation",
+    "title": "Presentation Team",
     "aboutVideoSrc": "https://drive.google.com/file/d/1bUhw9LEEh3VWKi2pHEHdYm0D8w4zITuu/view",
     "members": [
       {

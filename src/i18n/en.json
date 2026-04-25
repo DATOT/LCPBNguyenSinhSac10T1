@@ -59,7 +59,6 @@
       }
     ]
   },
-
   "historyOfSite": {
     "title": "Formation and Development of the Site",
     "data": [
@@ -120,7 +119,6 @@
       }
     ]
   },
-
   "mapSection": {
     "title": "Site Map of the Historical Complex",
     "hint": "Try clicking or hovering over the areas",
@@ -305,23 +303,19 @@
       }
     }
   },
-
   "aboutTheSite": {
     "title": "About the Site",
     "description": "Nguyen Sinh Sac Relic Site is a historical and cultural complex in Cao Lanh, Dong Thap, and the resting place of Nguyen Sinh Sac, father of President Ho Chi Minh.\n\nThe site combines traditional architecture with a peaceful ecological environment, including the grave area, temple, lotus pond, and recreated Hoa An Village.\n\nIt serves not only as a memorial but also as a place to foster national pride and preserve cultural heritage.",
     "image": "assets/AboutTheSite/khuditichnguyensinhsac.jpg"
   },
-
   "aboutNguyenSinhSac": {
     "title": "About Nguyen Sinh Sac",
     "description": "Nguyen Sinh Sac (1862–1929) was a patriotic Confucian scholar and an upright mandarin, best known as the father of President Ho Chi Minh.\n\nDespite his academic success, he lived modestly, defended the poor, and spread patriotic ideals through teaching and medicine.\n\nHis character and ideology deeply influenced Ho Chi Minh and continue to inspire generations.",
     "image": "assets/AboutNguyenSinhSac/nguyensinhsac.png"
   },
-
   "gallery": {
     "title": "Gallery",
     "loadingText": "Loading posts",
-
     "form": {
       "title": "Leave your impression with a post",
       "authorPlaceholder": "Your name (leave blank to stay anonymous)",
@@ -334,12 +328,10 @@
       "errorTitleRequired": "Title is required",
       "errorFileRequired": "Image is required"
     },
-
     "card": {
       "cta": "Click to learn more →"
     }
   },
-
   "footer": {
     "projectInfo": {
       "title": "Project Information",
@@ -365,58 +357,75 @@
   "headerSection": {
     "locationTag": "Cao Lanh City",
     "province": "Dong Thap",
-
     "badge": "Historical Site",
-
     "titleTop": "National Heritage",
     "titleMain": "Nguyen Sinh Sac",
-
     "subtitlePrefix": "Sacred Spirit",
     "subtitleHighlight": "Ancient Land.",
-
     "location": "Ward 4, Cao Lanh City",
     "time": "07:00 - 17:00",
-
     "exploreLabel": "Explore",
-
     "backgroundImage": "https://bcp.cdnchinhphu.vn/334894974524682240/2023/8/13/img2737-16919037726071551096263.jpg"
   },
   "navbar": {
     "sections": [
-      { "id": "header", "label": "Header" },
-      { "id": "about-place", "label": "About the Site" },
-      { "id": "about-person", "label": "Nguyen Sinh Sac" },
-      { "id": "biography", "label": "Biography" },
-      { "id": "history", "label": "History" },
-      { "id": "map", "label": "Map" },
-      { "id": "gallery", "label": "Gallery" },
-      { "id": "members", "label": "Members" }
+      {
+        "id": "header",
+        "label": "Header"
+      },
+      {
+        "id": "about-place",
+        "label": "About the Site"
+      },
+      {
+        "id": "about-person",
+        "label": "Nguyen Sinh Sac"
+      },
+      {
+        "id": "biography",
+        "label": "Biography"
+      },
+      {
+        "id": "history",
+        "label": "History"
+      },
+      {
+        "id": "map",
+        "label": "Map"
+      },
+      {
+        "id": "gallery",
+        "label": "Gallery"
+      },
+      {
+        "id": "members",
+        "label": "Members"
+      }
     ]
   },
   "teamsSection": {
-    "title": "Nhóm và sản phẩm",
+    "title": "Teams and products",
     "teams": [
       {
-        "title": "Team Science",
+        "title": "Science Team",
         "href": "/#/teamScience"
       },
       {
-        "title": "Team Presentation",
+        "title": "Presentation Team",
         "href": "/#/teamPresentation"
       },
       {
-        "title": "Team IT",
+        "title": "IT Team",
         "href": "/#/teamIT"
       },
       {
-        "title": "Team Media",
+        "title": "Media Team",
         "href": "/#/teamMedia"
       }
     ]
   },
-
   "teamIT": {
-    "title": "Team IT",
+    "title": "IT Team",
     "productInfo": "Website has intended features and cool animations:)",
     "members": [
       {
@@ -472,7 +481,7 @@
     ]
   },
   "teamMedia": {
-    "title": "Team Media",
+    "title": "Media Team",
     "posterSrc": "assets/TeamMedia/poster.png",
     "recapSrc": "assets/TeamMedia/placeholder_video.mp4",
     "trailerSrc": "assets/TeamMedia/placeholder_video.mp4",
@@ -525,7 +534,7 @@
     ]
   },
   "teamScience": {
-    "title": "Team Science",
+    "title": "Science Team",
     "infographicSrc": "assets/TeamScience/infographic.png",
     "docSrc": "assets/TeamScience/document.pdf",
     "members": [
@@ -587,7 +596,7 @@
     ]
   },
   "teamPresentation": {
-    "title": "Team Presentation",
+    "title": "Presentation Team",
     "aboutVideoSrc": "assets/TeamPresentation/placeholder_video.mp4",
     "members": [
       {

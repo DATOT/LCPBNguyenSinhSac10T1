@@ -45,7 +45,7 @@ const TeamScience = () => {
     <div className="relative min-h-screen px-4 py-10 overflow-hidden">
       <TeamNavbar currentHref="/#/teamScience"/>
       {/* Science-themed ambient — cool emerald/teal/indigo */}
-      {<div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10">
         <div className="absolute w-[460px] h-[460px] bg-emerald-500/15 blur-[140px] top-0 left-1/2 -translate-x-1/2" />
         <div className="absolute w-[300px] h-[300px] bg-teal-400/10 blur-[110px] top-1/3 right-0" />
         <div className="absolute w-[280px] h-[280px] bg-indigo-500/10 blur-[120px] bottom-0 left-0" />
@@ -59,7 +59,7 @@ const TeamScience = () => {
           }}
         />
       </div>
-      }
+      
       {/* Team heading — science-styled */}
       <motion.div
         initial="hidden"

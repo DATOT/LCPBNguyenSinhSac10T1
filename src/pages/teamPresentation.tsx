@@ -81,31 +81,29 @@ const TeamPresentation = () => {
         />
       </motion.div>
 
-      {/* About Video */}
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeUp as any}
-        transition={{ delay: 0.25 }}
-        className="my-12"
-      >
-        <a href={content.teamPresentation.aboutVideoSrc} className="flex items-center gap-3 mb-5">
-          <span className="font-mono tracking-[0.2em] uppercase text-violet-400/80 border border-violet-400/20 px-3 py-1 rounded-full bg-violet-500/5">
-            ▶ Watch About Video Here
-          </span>
-        </a>
+      <div className="mt-12 flex justify-center">
+        <div className="group relative w-full max-w-4xl rounded-2xl overflow-hidden border border-white/5 bg-white/2 backdrop-blur-sm shadow-xl">
+          
+          {/* Label */}
+          <div className="absolute top-3 left-3 z-20">
+            <span className="text-[10px] font-mono tracking-widest uppercase bg-black/50 text-violet-300 px-2 py-1 rounded-full border border-violet-400/20 backdrop-blur-sm">
+              Presentation Video
+            </span>
+          </div>
 
-        <a className="relative rounded-2xl overflow-hidden border border-white/5 shadow-2xl bg-black">
-          {/* decorative stage curtain strips */}
-          <div className="absolute inset-0 pointer-events-none opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "repeating-linear-gradient(90deg, transparent, transparent 48px, rgba(255,255,255,0.6) 48px, rgba(255,255,255,0.6) 50px)",
-            }}
-          />
+          {/* Video container */}
+          <div className="relative w-full aspect-video">
+            <iframe
+              src={content.teamPresentation.aboutVideoSrc.replace("/view", "/preview")}
+              className="absolute inset-0 w-full h-full"
+              allow="autoplay; fullscreen"
+            />
+          </div>
 
-        </a>
-      </motion.div >
+          {/* Overlay (nice cinematic fade) */}
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+        </div>
+      </div>
 
       <div className="mt-16">
         <FooterSection.default

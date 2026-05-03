@@ -408,19 +408,19 @@
     "teams": [
       {
         "title": "Science Team",
-        "href": "/#/teamScience"
+        "href": "/teamScience"
       },
       {
         "title": "Presentation Team",
-        "href": "/#/teamPresentation"
+        "href": "/teamPresentation"
       },
       {
         "title": "IT Team",
-        "href": "/#/teamIT"
+        "href": "/teamIT"
       },
       {
         "title": "Media Team",
-        "href": "/#/teamMedia"
+        "href": "/teamMedia"
       }
     ]
   },
@@ -484,7 +484,7 @@
     "title": "Media Team",
     "posterSrc": "assets/TeamMedia/poster.png",
     "recapSrc": "assets/TeamMedia/placeholder_video.mp4",
-    "trailerSrc": "assets/TeamMedia/placeholder_video.mp4",
+    "trailerSrc": "https://drive.google.com/file/d/1GfWg_hf8BB-saujlcwcYQzzksVObrhCf/preview",
     "members": [
       {
         "name": "Lê Ngân Phi Anh",
@@ -597,7 +597,7 @@
   },
   "teamPresentation": {
     "title": "Presentation Team",
-    "aboutVideoSrc": "assets/TeamPresentation/placeholder_video.mp4",
+    "aboutVideoSrc": "https://drive.google.com/file/d/1bUhw9LEEh3VWKi2pHEHdYm0D8w4zITuu/preview",
     "members": [
       {
         "name": "Nguyễn Trần Tấn Khoa",
